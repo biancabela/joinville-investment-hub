@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
 import Benefits from "@/components/Benefits";
@@ -12,7 +11,6 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    // Smooth scroll implementation for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -27,7 +25,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0b263b]">
       <Header />
       <Highlights />
       <Benefits />

@@ -11,13 +11,13 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white min-h-screen flex flex-col items-center justify-center text-center relative px-4 lg:px-0">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/10 z-0"></div>
+    <header className="bg-[#0b263b] min-h-screen flex flex-col items-center justify-center text-center relative px-4 lg:px-0">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b263b]/10 z-0"></div>
       <div className="container mx-auto z-10 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b263b] mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
           Invista com rentabilidade de 1.04% ao mês
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-[#0b263b]/80 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
           Oportunidades únicas para investidores e empresários em um mercado em expansão em Joinville
         </p>
         <Button 
