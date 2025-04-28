@@ -1,5 +1,5 @@
 
-import { Building, TrendingUp, MapPin, ExternalLink } from "lucide-react";
+import { Building, TrendingUp, MapPin, ExternalLink, DollarSign } from "lucide-react";
 
 const JoinvilleData = () => {
   return (

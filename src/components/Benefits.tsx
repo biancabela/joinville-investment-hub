@@ -1,5 +1,5 @@
 
-import { TrendingUp, Briefcase, DollarSign, ExternalLink } from "lucide-react";
+import { TrendingUp, Briefcase, DollarSign, ExternalLink, Building } from "lucide-react";
 
 const Benefits = () => {
   return (
