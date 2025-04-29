@@ -20,6 +20,9 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
     img.onerror = () => setImageError(true);
   }, [backgroundImageUrl]);
 
+  // Console log for debugging - moved outside of JSX
+  console.log("Background image status:", { imageLoaded, imageError, backgroundImageUrl });
+
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background with overlay gradient */}
@@ -31,9 +34,6 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       >
         <div className="absolute inset-0 bg-brand-navy/50"></div>
       </div>
-      
-      {/* Console log for debugging */}
-      {console.log("Background image status:", { imageLoaded, imageError, backgroundImageUrl })}
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
         <span className="inline-block text-brand-blue font-montserrat font-medium text-xl md:text-2xl mb-4 animate-fade-in">
