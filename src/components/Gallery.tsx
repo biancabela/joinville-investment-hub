@@ -50,7 +50,7 @@ const Gallery = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
-            <Card key={index} className="bg-[#1a1a1a] border-none overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
+            <Card key={index} className="bg-white border border-gray-100 overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
               <div className="overflow-hidden">
                 <AspectRatio ratio={16/9}>
                   <img 
@@ -62,8 +62,8 @@ const Gallery = () => {
                 </AspectRatio>
               </div>
               <CardFooter className="flex flex-col items-start py-4">
-                <h3 className="text-xl font-montserrat font-semibold mb-1">{item.title}</h3>
-                <p className="text-gray-400 font-opensans font-light">{item.description}</p>
+                <h3 className="text-xl font-montserrat font-semibold mb-1 text-[#20314e]">{item.title}</h3>
+                <p className="text-gray-600 font-opensans font-light">{item.description}</p>
               </CardFooter>
             </Card>
           ))}
