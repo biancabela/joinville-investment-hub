@@ -6,7 +6,7 @@ const JoinvilleData = () => {
     <section 
       className="section-spacing relative px-4 lg:px-0 bg-cover bg-center bg-no-repeat"
       style={{ 
-        backgroundImage: "url('/lovable-uploads/6be83203-fcb8-498d-80a4-94697497ba5b.png')" 
+        backgroundImage: "url('/lovable-uploads/c28f42e3-bd5b-4ef1-957b-b77ffcb807af.png')" 
       }}
     >
       {/* Gradient overlay for better text visibility */}
