@@ -16,7 +16,7 @@ const Header = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/f5706331-a858-4e53-bb63-22d9e941b5c1.png')",
+          backgroundImage: "url('/lovable-uploads/81777ba2-514c-4be3-af98-f8f75e93cb19.png')",
           backgroundPosition: "center",
           backgroundSize: "cover"
         }}
