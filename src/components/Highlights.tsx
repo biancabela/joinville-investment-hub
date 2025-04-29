@@ -10,7 +10,7 @@ const Highlights = () => {
     <section id="highlights" className="section-spacing bg-white px-6 lg:px-0">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left side - Cards - Removed one card as requested */}
+          {/* Left side - Cards - Only showing strategic location card */}
           <div className="flex flex-col">
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
               <div className="flex flex-col items-start text-left">
