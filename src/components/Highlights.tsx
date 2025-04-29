@@ -12,9 +12,9 @@ const Highlights = () => {
           <div className="flex flex-col gap-8">
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
               <div className="flex flex-col items-center text-center">
-                <MapPin className="text-gray-400 h-8 w-8 mb-6" />
-                <h3 className="text-2xl font-montserrat font-semibold text-gray-400 mb-4">Localização Estratégica</h3>
-                <p className="text-gray-300 leading-relaxed font-opensans font-light">
+                <MapPin className="text-brand-navy h-8 w-8 mb-6" />
+                <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Localização Estratégica</h3>
+                <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   Ponto de encontro regional e polo comercial de referência em Joinville, com acesso a um público-alvo de mais de 150 mil pessoas.
                 </p>
               </div>
@@ -22,9 +22,9 @@ const Highlights = () => {
             
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
               <div className="flex flex-col items-center text-center">
-                <Building className="text-gray-400 h-8 w-8 mb-6" />
-                <h3 className="text-2xl font-montserrat font-semibold text-gray-400 mb-4">Conceito Completo</h3>
-                <p className="text-gray-300 leading-relaxed font-opensans font-light">
+                <Building className="text-brand-navy h-8 w-8 mb-6" />
+                <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Conceito Completo</h3>
+                <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   32 mil m² de área bruta locável, reúne em um só lugar: comércio varejista, serviços essenciais, gastronomia, lazer e infraestrutura moderna.
                 </p>
               </div>
@@ -32,12 +32,12 @@ const Highlights = () => {
           </div>
           
           {/* Right side - Text content */}
-          <div className="flex flex-col justify-center bg-white rounded-lg p-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-bold text-gray-400 mb-6 leading-tight">
+          <div className="flex flex-col justify-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-bold text-brand-navy mb-6 leading-tight">
               Rentabilidade Real, Segurança e Visão de Futuro
             </h2>
             
-            <div className="space-y-6 text-gray-300">
+            <div className="space-y-6 text-gray-600/90">
               <p className="leading-relaxed font-opensans font-light text-base lg:text-lg">
                 Este é um projeto exclusivo desenvolvido para entregar resultados concretos e consistentes. Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações. A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
               </p>
