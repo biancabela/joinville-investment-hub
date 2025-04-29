@@ -24,9 +24,11 @@ const Navigation = ({
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="relative z-20">
-          <span className={`text-2xl font-montserrat font-bold ${scrollPosition > 50 ? 'text-brand-navy' : 'text-white'}`}>
-            Joinville<span className="text-brand-orange">Invest</span>
-          </span>
+          <img 
+            src="/lovable-uploads/5cb0ddb3-da63-4cee-80f8-148159cb95bd.png" 
+            alt="GALPOMAX Logo" 
+            className="h-10"
+          />
         </a>
         
         {/* Desktop Menu */}
