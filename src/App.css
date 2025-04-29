@@ -24,3 +24,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Ensure backgrounds cover their containers properly */
+[style*="background-image"] {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
