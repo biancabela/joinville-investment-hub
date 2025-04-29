@@ -1,8 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Animation classes */
@@ -40,6 +42,27 @@ html {
 
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
+/* Modern card styles */
+.modern-card {
+  border-radius: 16px;
+  background: linear-gradient(145deg, #ffffff, #f5f9fd);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Soft text colors */
+.text-soft {
+  color: rgba(75, 85, 99, 0.9);
+}
+
+.text-soft-dark {
+  color: rgba(31, 41, 55, 0.9);
+}
