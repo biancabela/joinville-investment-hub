@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
@@ -55,10 +54,10 @@ const Index = () => {
           <Gallery />
         </div>
         <div className="scroll-animate">
-          <Stats />
+          <JoinvilleData />
         </div>
         <div className="scroll-animate">
-          <JoinvilleData />
+          <Stats />
         </div>
         <div className="scroll-animate">
           <ContactForm />
