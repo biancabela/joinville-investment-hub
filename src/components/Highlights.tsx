@@ -1,5 +1,5 @@
 
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin, Building, ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -7,10 +7,10 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Highlights = () => {
   return (
-    <section id="highlights" className="section-spacing bg-[#20314e] px-6 lg:px-0">
+    <section id="highlights" className="section-spacing bg-white px-6 lg:px-0">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left side - Cards */}
+          {/* Left side - Cards - Removed one card as requested */}
           <div className="flex flex-col">
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
               <div className="flex flex-col items-start text-left">
@@ -26,8 +26,12 @@ const Highlights = () => {
           {/* Right side - Text content */}
           <div className="flex flex-col justify-center">
             <div className="text-left">
-              <p className="leading-relaxed font-opensans font-light text-base text-white mb-6">
+              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
                 Este é um projeto exclusivo desenvolvido para entregar resultados concretos e consistentes. Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações. A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
+              </p>
+              
+              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
+                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos. Com localização estratégica e estrutura de alto padrão, este investimento combina liquidez, segurança e alta performance, tornando-se uma excelente opção para quem busca acréscimo patrimonial com retorno real acima da inflação.
               </p>
             </div>
             
