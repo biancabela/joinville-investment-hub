@@ -47,10 +47,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <FeatureCards />
       <main>
         <div className="scroll-animate">
           <Highlights />
+        </div>
+        <div className="scroll-animate">
+          <FeatureCards />
         </div>
         <div className="scroll-animate">
           <Gallery />
