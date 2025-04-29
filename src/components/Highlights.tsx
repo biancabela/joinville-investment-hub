@@ -12,7 +12,7 @@ const Highlights = () => {
             <div className="text-left">
               <p className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-montserrat">INVESTIMENTO INTELIGENTE</p>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat text-gray-900 leading-tight">
-                ALTA RENTABILIDADE, BAIXA VACÂNCIA E INFRAESTRUTURA.
+                SEGURANÇA, RENTABILIDADE E ALTA PERFORMANCE
               </h2>
               
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
