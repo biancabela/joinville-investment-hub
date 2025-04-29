@@ -16,12 +16,12 @@ const Header = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/f5706331-a858-4e53-bb63-22d9e941b5c1.png')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1551038247-3d9af20df552')",
           backgroundPosition: "center",
           backgroundSize: "cover"
         }}
       >
-        <div className="absolute inset-0 bg-[#0b263b]/60"></div>
+        <div className="absolute inset-0 bg-[#0b263b]/70"></div>
       </div>
       
       <div className="container mx-auto z-10 max-w-4xl">
