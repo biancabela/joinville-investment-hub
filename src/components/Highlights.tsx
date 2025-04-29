@@ -5,6 +5,8 @@ const Highlights = () => {
   return (
     <section id="highlights" className="py-20 bg-white px-4 lg:px-0">
       <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0b263b] mb-12 text-center">Projeto Multiuso Inovador</h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
             <div className="flex items-start mb-4">
