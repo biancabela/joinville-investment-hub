@@ -25,6 +25,7 @@ const Header = () => {
       </div>
       
       <div className="container mx-auto z-10 max-w-4xl">
+        <h2 className="text-xl md:text-2xl font-bold text-[#0aaac6] mb-4">Projeto Multiuso Inovador</h2>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12">
           Oportunidade única para investidores e empresários em Joinville
         </h1>
