@@ -7,7 +7,13 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Joinville Investment Hub</h3>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/c4fccc32-9acd-4e44-9994-aa4543af1586.png" 
+                alt="Galpomax" 
+                className="h-10 md:h-12" 
+              />
+            </div>
             <p className="text-gray-300 mb-6 font-opensans font-light">
               Soluções de investimento imobiliário com foco em rentabilidade e segurança para investidores.
             </p>
@@ -64,8 +70,8 @@ const Footer = () => {
             </div>
             <div className="flex items-center">
               <Mail className="h-5 w-5 mr-3 text-brand-blue" />
-              <a href="mailto:contato@joinvilleinvest.com" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
-                contato@joinvilleinvest.com
+              <a href="mailto:contato@galpomax.com.br" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
+                contato@galpomax.com.br
               </a>
             </div>
           </div>
@@ -82,7 +88,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 md:mb-0 font-opensans font-light">
-            &copy; {new Date().getFullYear()} Joinville Investment Hub. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Galpomax Investimentos Imobiliários. Todos os direitos reservados.
           </p>
           
           <div className="flex gap-6 font-opensans font-light">

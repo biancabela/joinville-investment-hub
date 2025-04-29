@@ -34,9 +34,11 @@ const Header = () => {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           <a href="#" className="relative z-20">
-            <span className={`text-2xl font-montserrat font-bold ${scrollPosition > 50 ? 'text-brand-navy' : 'text-white'}`}>
-              Joinville<span className="text-brand-orange">Invest</span>
-            </span>
+            <img 
+              src="/lovable-uploads/c4fccc32-9acd-4e44-9994-aa4543af1586.png" 
+              alt="Galpomax" 
+              className="h-12 md:h-14" 
+            />
           </a>
           
           {/* Desktop Menu */}
