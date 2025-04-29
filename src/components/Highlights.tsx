@@ -5,16 +5,14 @@ import { Button } from "@/components/ui/button";
 
 const Highlights = () => {
   return (
-    <section id="highlights" className="section-spacing bg-gradient-to-b from-white via-brand-light-blue to-white px-6 lg:px-0">
+    <section id="highlights" className="section-spacing bg-white px-6 lg:px-0">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left side - Cards */}
           <div className="flex flex-col gap-8">
-            <Card className="bg-gradient-to-br from-white to-[#f3f9fe] p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
+            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
               <div className="flex flex-col items-center text-center">
-                <div className="bg-brand-light-blue p-4 rounded-full mb-6">
-                  <MapPin className="text-brand-blue h-8 w-8" />
-                </div>
+                <MapPin className="text-brand-navy h-8 w-8 mb-6" />
                 <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Localização Estratégica</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   Ponto de encontro regional e polo comercial de referência em Joinville, com acesso a um público-alvo de mais de 150 mil pessoas.
@@ -22,11 +20,9 @@ const Highlights = () => {
               </div>
             </Card>
             
-            <Card className="bg-gradient-to-br from-white to-[#f3f9fe] p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
+            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
               <div className="flex flex-col items-center text-center">
-                <div className="bg-brand-light-blue p-4 rounded-full mb-6">
-                  <Building className="text-brand-blue h-8 w-8" />
-                </div>
+                <Building className="text-brand-navy h-8 w-8 mb-6" />
                 <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Conceito Completo</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   32 mil m² de área bruta locável, reúne em um só lugar: comércio varejista, serviços essenciais, gastronomia, lazer e infraestrutura moderna.

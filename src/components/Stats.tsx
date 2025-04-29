@@ -1,7 +1,9 @@
 
+import { Landmark, Check, Clock } from "lucide-react";
+
 const Stats = () => {
   return (
-    <section id="stats" className="section-spacing bg-brand-light-blue px-4 lg:px-0">
+    <section id="stats" className="section-spacing bg-white px-4 lg:px-0">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold text-brand-navy mb-4 text-center">
           Números que Impressionam
@@ -12,17 +14,17 @@ const Stats = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-blue mb-2">16.000+</p>
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">16.000+</p>
             <p className="text-gray-700 font-medium font-montserrat">Lotes entregues</p>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-blue mb-2">14+</p>
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">14+</p>
             <p className="text-gray-700 font-medium font-montserrat">Municípios atendidos</p>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-blue mb-2">27.000</p>
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">27.000</p>
             <p className="text-gray-700 font-medium font-montserrat">Projetos em andamento</p>
           </div>
         </div>
