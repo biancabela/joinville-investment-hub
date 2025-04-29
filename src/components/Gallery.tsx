@@ -39,7 +39,7 @@ const Gallery = () => {
   return (
     <section className="section-spacing bg-brand-navy text-white px-4 lg:px-0" id="gallery">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold mb-3 text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold mb-3 text-center">
           OPERAÇÕES DE ALTA EFICIÊNCIA
         </h2>
         
@@ -62,7 +62,7 @@ const Gallery = () => {
                 </AspectRatio>
               </div>
               <CardFooter className="flex flex-col items-start py-4">
-                <h3 className="text-xl font-montserrat font-semibold mb-1 text-[#20314e]">{item.title}</h3>
+                <h3 className="text-xl font-poppins font-semibold mb-1 text-[#20314e]">{item.title}</h3>
                 <p className="text-gray-600 font-opensans font-light">{item.description}</p>
               </CardFooter>
             </Card>

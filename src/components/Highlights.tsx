@@ -15,7 +15,7 @@ const Highlights = () => {
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
               <div className="flex flex-col items-start text-left">
                 <MapPin className="text-[#20314e] h-8 w-8 mb-6" />
-                <h3 className="text-2xl font-montserrat font-semibold text-[#20314e] mb-4">Localização Estratégica</h3>
+                <h3 className="text-2xl font-poppins font-semibold text-[#20314e] mb-4">Localização Estratégica</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   Ponto de encontro regional e polo comercial de referência em Joinville, com acesso a um público-alvo de mais de 150 mil pessoas.
                 </p>
@@ -25,7 +25,7 @@ const Highlights = () => {
             <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
               <div className="flex flex-col items-start text-left">
                 <Building className="text-[#20314e] h-8 w-8 mb-6" />
-                <h3 className="text-2xl font-montserrat font-semibold text-[#20314e] mb-4">Conceito Completo</h3>
+                <h3 className="text-2xl font-poppins font-semibold text-[#20314e] mb-4">Conceito Completo</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
                   32 mil m² de área bruta locável, reúne em um só lugar: comércio varejista, serviços essenciais, gastronomia, lazer e infraestrutura moderna.
                 </p>
@@ -36,17 +36,17 @@ const Highlights = () => {
           {/* Right side - Text content */}
           <div className="flex flex-col justify-center">
             <div className="text-left">
-              <h3 className="text-xl font-montserrat font-semibold text-[#20314e] mb-3">Rentabilidade Real</h3>
+              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Rentabilidade Real</h3>
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
                 Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações.
               </p>
               
-              <h3 className="text-xl font-montserrat font-semibold text-[#20314e] mb-3">Segurança</h3>
+              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Segurança</h3>
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
                 A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
               </p>
               
-              <h3 className="text-xl font-montserrat font-semibold text-[#20314e] mb-3">Visão de Futuro</h3>
+              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Visão de Futuro</h3>
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
                 Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos.
               </p>
