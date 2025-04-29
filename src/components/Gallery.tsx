@@ -1,7 +1,6 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card } from "@/components/ui/card";
-import { useState } from "react";
 
 const Gallery = () => {
   const galleryItems = [
@@ -37,14 +36,6 @@ const Gallery = () => {
     }
   ];
 
-  // State to track which card is active
-  const [activeCard, setActiveCard] = useState<number | null>(null);
-
-  // Toggle card activation
-  const toggleCard = (index: number) => {
-    setActiveCard(activeCard === index ? null : index);
-  };
-
   return (
     <section className="section-spacing bg-brand-navy text-white px-4 lg:px-0" id="gallery">
       <div className="container mx-auto max-w-7xl">
@@ -62,7 +53,6 @@ const Gallery = () => {
             <Card 
               key={index} 
               className="border-none rounded-lg overflow-hidden shadow-card hover:shadow-hover transition-all bg-transparent"
-              onClick={() => toggleCard(index)}
             >
               <div className="relative group h-full cursor-pointer overflow-hidden">
                 <AspectRatio ratio={16/9}>
@@ -73,11 +63,10 @@ const Gallery = () => {
                     loading="lazy"
                   />
                   
-                  {/* Overlay with text - animated on click */}
+                  {/* Overlay with text - animated on hover */}
                   <div 
-                    className={`absolute inset-0 bg-brand-navy/70 flex flex-col justify-center items-center p-4 transition-all duration-300 ease-in-out transform
-                      ${activeCard === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}
-                    `}
+                    className="absolute inset-0 bg-brand-navy/70 flex flex-col justify-center items-center p-4 transition-all duration-300 ease-in-out transform 
+                      opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0"
                   >
                     <h3 className="text-xl font-poppins font-semibold text-white mb-2">{item.title}</h3>
                     <p className="text-sm text-center font-opensans font-light text-white">{item.description}</p>
