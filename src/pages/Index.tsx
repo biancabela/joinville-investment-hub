@@ -1,6 +1,6 @@
+
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
-import Benefits from "@/components/Benefits";
 import ComparisonChart from "@/components/ComparisonChart";
 import Gallery from "@/components/Gallery";
 import Stats from "@/components/Stats";
@@ -28,7 +28,6 @@ const Index = () => {
     <div className="min-h-screen bg-[#0b263b]">
       <Header />
       <Highlights />
-      <Benefits />
       <ComparisonChart />
       <Gallery />
       <Stats />
