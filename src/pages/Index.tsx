@@ -49,6 +49,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
+        {/* Moved FeatureCards to appear earlier in the page structure */}
         <div className="scroll-animate">
           <FeatureCards />
         </div>
