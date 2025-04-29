@@ -12,9 +12,9 @@ const Highlights = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <Card className="bg-white p-8 rounded-xl shadow-md border-0 hover:shadow-lg transition-all duration-300 transform hover:translate-y-[-5px]">
+          <Card className="bg-gradient-to-br from-white to-[#e7f0fd] p-8 rounded-xl shadow-lg border-0 hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-5px]">
             <div className="flex items-start mb-4">
-              <div className="bg-[#0aaac6]/10 p-3 rounded-full mr-4">
+              <div className="bg-[#0aaac6]/20 p-3 rounded-full mr-4">
                 <Building className="text-[#0aaac6] h-6 w-6" />
               </div>
               <div>
@@ -26,9 +26,9 @@ const Highlights = () => {
             </div>
           </Card>
           
-          <Card className="bg-white p-8 rounded-xl shadow-md border-0 hover:shadow-lg transition-all duration-300 transform hover:translate-y-[-5px]">
+          <Card className="bg-gradient-to-br from-white to-[#e7f0fd] p-8 rounded-xl shadow-lg border-0 hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-5px]">
             <div className="flex items-start mb-4">
-              <div className="bg-[#0aaac6]/10 p-3 rounded-full mr-4">
+              <div className="bg-[#0aaac6]/20 p-3 rounded-full mr-4">
                 <MapPin className="text-[#0aaac6] h-6 w-6" />
               </div>
               <div>
@@ -42,22 +42,22 @@ const Highlights = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="bg-white p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
+          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
             <h4 className="font-bold text-lg text-[#0b263b] mb-2">Área bruta locável</h4>
             <p className="text-3xl font-bold text-[#ff8d08] group-hover:scale-105 transition-transform">32.000 m²</p>
           </Card>
           
-          <Card className="bg-white p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
+          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
             <h4 className="font-bold text-lg text-[#0b263b] mb-2">Rentabilidade</h4>
             <p className="text-3xl font-bold text-[#ff8d08] group-hover:scale-105 transition-transform">1,04% a.m.</p>
           </Card>
           
-          <Card className="bg-white p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
+          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
             <h4 className="font-bold text-lg text-[#0b263b] mb-2">Projeto exclusivo</h4>
             <p className="text-xl font-medium text-[#0b263b]">Contratos BTS assinados</p>
           </Card>
           
-          <Card className="bg-white p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
+          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
             <h4 className="font-bold text-lg text-[#0b263b] mb-2">Dividendos previstos</h4>
             <p className="text-xl font-medium text-[#0b263b]">A partir de Fev/2026</p>
           </Card>
