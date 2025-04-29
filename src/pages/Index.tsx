@@ -1,7 +1,6 @@
 
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
-import ComparisonChart from "@/components/ComparisonChart";
 import Gallery from "@/components/Gallery";
 import Stats from "@/components/Stats";
 import JoinvilleData from "@/components/JoinvilleData";
@@ -28,7 +27,6 @@ const Index = () => {
     <div className="min-h-screen bg-[#0b263b]">
       <Header />
       <Highlights />
-      <ComparisonChart />
       <Gallery />
       <Stats />
       <JoinvilleData />
