@@ -14,14 +14,12 @@ const Header = () => {
     <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background with overlay gradient */}
       <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
+        className="absolute inset-0 z-0" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/81777ba2-514c-4be3-af98-f8f75e93cb19.png')",
-          backgroundPosition: "center",
-          backgroundSize: "cover"
+          backgroundImage: "url('/lovable-uploads/5ae04f9e-db27-48b9-ae06-d84050b4efc2.png')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0b263b]/90 via-[#0b263b]/70 to-[#0b263b]/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0b263b]/80 via-[#0b263b]/60 to-[#0b263b]/80"></div>
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl">
