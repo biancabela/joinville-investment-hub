@@ -1,5 +1,6 @@
 
 import Header from "@/components/Header";
+import InvestmentBenefits from "@/components/InvestmentBenefits";
 import Highlights from "@/components/Highlights";
 import Gallery from "@/components/Gallery";
 import Stats from "@/components/Stats";
@@ -26,6 +27,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#0b263b]">
       <Header />
+      <InvestmentBenefits />
       <Highlights />
       <Gallery />
       <Stats />
