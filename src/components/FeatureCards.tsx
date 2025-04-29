@@ -62,7 +62,7 @@ const FeatureCards = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                Ponto de encontro regional e polo comercial de referência em Joinville, com acesso a um público-alvo de mais de 150 mil pessoas
+                polo comercial com público-alvo de mais de 150 mil pessoas
               </p>
             </CardContent>
           </Card>

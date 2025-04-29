@@ -17,7 +17,7 @@ const Highlights = () => {
                 <MapPin className="text-[#20314e] h-8 w-8 mb-6" />
                 <h3 className="text-2xl font-poppins font-semibold text-[#20314e] mb-4">Localização Estratégica</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
-                  Ponto de encontro regional e polo comercial de referência em Joinville, com acesso a um público-alvo de mais de 150 mil pessoas.
+                  polo comercial com público-alvo de mais de 150 mil pessoas.
                 </p>
               </div>
             </Card>
