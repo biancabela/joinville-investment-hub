@@ -10,8 +10,8 @@ const Highlights = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left side - Cards */}
           <div className="flex flex-col gap-8">
-            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
-              <div className="flex flex-col items-center text-center">
+            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
+              <div className="flex flex-col items-start text-left">
                 <MapPin className="text-brand-navy h-8 w-8 mb-6" />
                 <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Localização Estratégica</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
@@ -20,8 +20,8 @@ const Highlights = () => {
               </div>
             </Card>
             
-            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300">
-              <div className="flex flex-col items-center text-center">
+            <Card className="bg-white p-8 rounded-lg shadow-card border border-gray-100/50 hover:shadow-hover transition-all duration-300 hover:bg-gray-50 active:bg-gray-100 h-full">
+              <div className="flex flex-col items-start text-left">
                 <Building className="text-brand-navy h-8 w-8 mb-6" />
                 <h3 className="text-2xl font-montserrat font-semibold text-brand-navy mb-4">Conceito Completo</h3>
                 <p className="text-gray-600/90 leading-relaxed font-opensans font-light">
@@ -33,17 +33,20 @@ const Highlights = () => {
           
           {/* Right side - Text content */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-montserrat font-bold text-brand-navy mb-6 leading-tight">
-              Rentabilidade Real, Segurança e Visão de Futuro
-            </h2>
-            
-            <div className="space-y-6 text-gray-600/90">
-              <p className="leading-relaxed font-opensans font-light text-base lg:text-lg">
-                Este é um projeto exclusivo desenvolvido para entregar resultados concretos e consistentes. Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações. A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
+            <div className="text-left">
+              <h3 className="text-xl font-montserrat font-semibold text-brand-navy mb-3">Rentabilidade Real</h3>
+              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
+                Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações.
               </p>
               
-              <p className="leading-relaxed font-opensans font-light text-base lg:text-lg">
-                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos. Com localização estratégica e estrutura de alto padrão, este investimento combina liquidez, segurança e alta performance, tornando-se uma excelente opção para quem busca acréscimo patrimonial com retorno real acima da inflação.
+              <h3 className="text-xl font-montserrat font-semibold text-brand-navy mb-3">Segurança</h3>
+              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
+                A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
+              </p>
+              
+              <h3 className="text-xl font-montserrat font-semibold text-brand-navy mb-3">Visão de Futuro</h3>
+              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
+                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos.
               </p>
             </div>
             
