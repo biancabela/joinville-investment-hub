@@ -50,7 +50,7 @@ const Gallery = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
-            <Card key={index} className="bg-white border border-gray-100 overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
+            <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-100/50 overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
               <div className="overflow-hidden">
                 <AspectRatio ratio={16/9}>
                   <img 
