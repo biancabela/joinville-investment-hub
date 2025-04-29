@@ -188,23 +188,7 @@ const Header = () => {
             Oportunidade única para investidores e empresários em Joinville
           </h1>
 
-          {/* Feature card */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-10 border border-white/20 max-w-lg mx-auto transform hover:scale-[1.02] transition-all animate-fade-in-delayed shadow-card">
-            <div className="flex flex-col gap-5">
-              <div className="flex justify-between items-center gap-4">
-                <p className="text-white text-lg font-montserrat">Rentabilidade mensal</p>
-                <p className="text-brand-orange text-2xl font-bold font-montserrat">1,04% a.m.</p>
-              </div>
-              <div className="flex justify-between items-center gap-4">
-                <p className="text-white text-lg font-montserrat">Área bruta locável</p>
-                <p className="text-brand-orange text-2xl font-bold font-montserrat">32.000 m²</p>
-              </div>
-              <div className="flex justify-between items-center gap-4">
-                <p className="text-white text-lg font-montserrat">Dividendos previstos</p>
-                <p className="text-white text-lg">A partir de Fev/2026</p>
-              </div>
-            </div>
-          </div>
+          {/* Removido o cartão de feature com os dados de rentabilidade */}
           
           <Button 
             onClick={() => scrollToSection('highlights')} 
