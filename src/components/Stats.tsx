@@ -13,18 +13,18 @@ const Stats = () => {
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">16.000+</p>
+          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-4">16.000+</p>
             <p className="text-gray-700 font-medium font-montserrat">Lotes entregues</p>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">14+</p>
+          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-4">14+</p>
             <p className="text-gray-700 font-medium font-montserrat">Municípios atendidos</p>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-card text-center border border-gray-100 hover:shadow-hover transition-all card-hover">
-            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-2">27.000</p>
+          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
+            <p className="text-4xl md:text-5xl font-montserrat font-bold text-brand-navy mb-4">27.000</p>
             <p className="text-gray-700 font-medium font-montserrat">Projetos em andamento</p>
           </div>
         </div>
