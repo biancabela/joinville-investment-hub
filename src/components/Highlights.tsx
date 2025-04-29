@@ -7,11 +7,6 @@ const Highlights = () => {
   return (
     <section id="highlights" className="py-24 bg-gradient-to-b from-white via-gray-50 to-white px-6 lg:px-0">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0b263b] mb-4 text-center">Projeto Multiuso Inovador</h2>
-        <p className="text-lg text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-          Um conceito único que combina rentabilidade com infraestrutura moderna para seu investimento
-        </p>
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left side - Cards */}
           <div className="flex flex-col gap-8">
