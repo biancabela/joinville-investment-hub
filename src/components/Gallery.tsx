@@ -1,6 +1,6 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 const Gallery = () => {
   const galleryItems = [
@@ -50,21 +50,23 @@ const Gallery = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
-            <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-100/50 overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
-              <div className="overflow-hidden">
+            <Card key={index} className="border-none rounded-lg overflow-hidden shadow-card hover:shadow-hover transition-all bg-transparent">
+              <div className="relative group h-full cursor-pointer overflow-hidden">
                 <AspectRatio ratio={16/9}>
                   <img 
                     src={item.image} 
                     alt={item.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </AspectRatio>
+                
+                {/* Overlay that appears on hover */}
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                  <h3 className="text-xl font-poppins font-semibold mb-2 text-white">{item.title}</h3>
+                  <p className="text-gray-200 font-opensans font-light">{item.description}</p>
+                </div>
               </div>
-              <CardFooter className="flex flex-col items-start py-4">
-                <h3 className="text-xl font-poppins font-semibold mb-1 text-[#20314e]">{item.title}</h3>
-                <p className="text-gray-600 font-opensans font-light">{item.description}</p>
-              </CardFooter>
             </Card>
           ))}
         </div>
