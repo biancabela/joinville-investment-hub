@@ -6,7 +6,6 @@ import Stats from "@/components/Stats";
 import JoinvilleData from "@/components/JoinvilleData";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import FeatureCards from "@/components/FeatureCards";
 
 const Index = () => {
   useEffect(() => {
@@ -50,9 +49,6 @@ const Index = () => {
       <main>
         <div className="scroll-animate">
           <Highlights />
-        </div>
-        <div className="scroll-animate">
-          <FeatureCards />
         </div>
         <div className="scroll-animate">
           <Gallery />

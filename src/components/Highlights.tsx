@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import FeatureCards from "./FeatureCards";
 
 const Highlights = () => {
   return (
@@ -30,8 +31,10 @@ const Highlights = () => {
             </div>
           </div>
           
-          {/* Right column will be empty to maintain the layout structure */}
-          <div className="hidden lg:block"></div>
+          {/* Right column with feature cards */}
+          <div className="flex items-center">
+            <FeatureCards compact={true} />
+          </div>
         </div>
       </div>
     </section>
