@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, MapPin, FileText, Square3d } from "lucide-react";
+import { Calendar, MapPin, FileText, LayoutGrid } from "lucide-react";
 
 const FeatureCards = () => {
   return (
@@ -41,7 +41,7 @@ const FeatureCards = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
             <CardHeader className="pb-2">
               <div className="mb-2 rounded-full bg-brand-light-blue w-12 h-12 flex items-center justify-center">
-                <Square3d className="text-brand-blue h-6 w-6" />
+                <LayoutGrid className="text-brand-blue h-6 w-6" />
               </div>
               <CardTitle className="text-lg text-gray-800 font-semibold">Área Bruta Locável</CardTitle>
             </CardHeader>
