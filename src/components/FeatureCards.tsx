@@ -14,7 +14,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 gap-6">
             {/* Rentabilidade */}
-            <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
               <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
                 <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                   <TrendingUp className="h-8 w-8 text-black" />
@@ -27,7 +27,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
             </Card>
 
             {/* Segurança */}
-            <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
               <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
                 <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                   <Handshake className="h-8 w-8 text-black" />
@@ -40,7 +40,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
             </Card>
 
             {/* Diversificação */}
-            <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
               <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
                 <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                   <FileText className="h-8 w-8 text-black" />
@@ -53,7 +53,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
             </Card>
 
             {/* Localização Estratégica */}
-            <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
               <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
                 <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                   <DollarSign className="h-8 w-8 text-black" />
@@ -76,7 +76,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {/* Rentabilidade */}
-          <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                 <TrendingUp className="h-8 w-8 text-black" />
@@ -89,7 +89,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Segurança */}
-          <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                 <Handshake className="h-8 w-8 text-black" />
@@ -102,7 +102,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Diversificação */}
-          <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                 <FileText className="h-8 w-8 text-black" />
@@ -115,7 +115,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Localização Estratégica */}
-          <Card className="w-[300px] h-[250px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
                 <DollarSign className="h-8 w-8 text-black" />
