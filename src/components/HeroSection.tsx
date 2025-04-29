@@ -41,7 +41,6 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </span>
 
         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 md:mb-10 tracking-tight leading-tight mx-auto animate-fade-in max-w-4xl">
-          <span className="block mb-4 uppercase tracking-wider text-brand-orange">LIQUIDEZ, SEGURANÇA E ALTA PERFORMANCE</span>
           Oportunidade única para investidores e empresários em Joinville
         </h1>
         
