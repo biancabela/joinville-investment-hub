@@ -10,7 +10,7 @@ type HeroSectionProps = {
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const backgroundImageUrl = "/lovable-uploads/c6a66b7e-06c9-43a9-a2e9-01661b266184.png";
+  const backgroundImageUrl = "/lovable-uploads/543fb73e-f7c6-4b7d-b2f3-eb46f2307152.png";
   
   // Pre-load the image to check if it loads correctly
   useEffect(() => {
@@ -32,7 +32,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           backgroundImage: !imageError ? `url('${backgroundImageUrl}')` : 'none',
         }}
       >
-        <div className="absolute inset-0 bg-brand-navy/50"></div>
+        <div className="absolute inset-0 bg-brand-navy/60"></div>
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
