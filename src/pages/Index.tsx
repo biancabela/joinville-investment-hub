@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
@@ -47,6 +48,29 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
+        {/* Project Description Section */}
+        <section className="py-16 bg-white px-6 md:px-10 lg:px-20">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-brand-orange uppercase tracking-wide">
+              Liquidez, segurança e alto desempenho
+            </h2>
+            <div className="text-gray-700 space-y-6 text-lg leading-relaxed">
+              <p>
+                Este é um projeto exclusivo desenvolvido para entregar resultados concretos e consistentes. 
+                Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento 
+                oferece retorno garantido desde o início das operações. A estrutura foi pensada para atender 
+                às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
+              </p>
+              <p>
+                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo 
+                de rendimentos alinhado ao cronograma de entrega e operação dos ativos. Com localização estratégica 
+                e estrutura de alto padrão, este investimento combina liquidez, segurança e alta performance, 
+                tornando-se uma excelente opção para quem busca acréscimo patrimonial com retorno real acima da inflação.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <div className="scroll-animate">
           <Highlights />
         </div>
