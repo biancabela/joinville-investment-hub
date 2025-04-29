@@ -37,32 +37,33 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#111] text-white px-4 lg:px-0" id="gallery">
+    <section className="section-spacing bg-brand-navy text-white px-4 lg:px-0" id="gallery">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold mb-3 text-center">
           OPERAÇÕES DE ALTA EFICIÊNCIA
         </h2>
         
-        <p className="text-lg text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+        <p className="text-base md:text-lg font-opensans font-light text-center text-gray-300 mb-16 max-w-3xl mx-auto">
           O empreendimento foi projetado para otimizar logística e produtividade, 
           garantindo um ambiente seguro, eficiente e preparado para operações de alta performance.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
-            <Card key={index} className="bg-[#1a1a1a] border-none overflow-hidden">
+            <Card key={index} className="bg-[#1a1a1a] border-none overflow-hidden rounded-lg shadow-card hover:shadow-hover transition-all card-hover">
               <div className="overflow-hidden">
-                <AspectRatio ratio={4/3}>
+                <AspectRatio ratio={16/9}>
                   <img 
                     src={item.image} 
                     alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
                   />
                 </AspectRatio>
               </div>
               <CardFooter className="flex flex-col items-start py-4">
-                <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
-                <p className="text-gray-400">{item.description}</p>
+                <h3 className="text-xl font-montserrat font-semibold mb-1">{item.title}</h3>
+                <p className="text-gray-400 font-opensans font-light">{item.description}</p>
               </CardFooter>
             </Card>
           ))}

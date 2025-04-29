@@ -1,17 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Animation classes */
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -20,7 +20,12 @@ body {
 }
 
 .animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in 0.8s ease-out 0.3s forwards;
+  opacity: 0;
 }
 
 /* Add smooth scrolling to the entire page */
@@ -42,14 +47,14 @@ html {
 
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Modern card styles */
 .modern-card {
-  border-radius: 16px;
+  border-radius: 8px;
   background: linear-gradient(145deg, #ffffff, #f5f9fd);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -58,85 +63,68 @@ html {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* Soft text colors */
-.text-soft {
-  color: rgba(75, 85, 99, 0.9);
+/* Font sizes responsive */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 32px;
+  }
+  .subtitle-text {
+    font-size: 20px;
+  }
+  .body-text {
+    font-size: 14px;
+  }
 }
 
-.text-soft-dark {
-  color: rgba(31, 41, 55, 0.9);
+@media (min-width: 769px) {
+  .title-text {
+    font-size: 48px;
+  }
+  .subtitle-text {
+    font-size: 24px;
+  }
+  .body-text {
+    font-size: 16px;
+  }
 }
 
-/* Investment benefits section styles */
-.benefit-card {
-  transition: all 0.3s ease;
-  border-radius: 12px;
-  overflow: hidden;
+/* Section spacing */
+.section-spacing {
+  padding: 40px 0;
 }
 
-.benefit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-}
-
-.benefit-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: rgba(11, 38, 59, 0.05);
-  margin-bottom: 1.5rem;
+@media (min-width: 768px) {
+  .section-spacing {
+    padding: 80px 0;
+  }
 }
 
 /* Custom button styles */
-.btn-outline {
-  border: 2px solid #0b263b;
-  color: #0b263b;
-  background: transparent;
-  padding: 0.75rem 2rem;
-  border-radius: 9999px;
+.btn-primary {
+  background-color: #ff8d08;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
-.btn-outline:hover {
-  background: #0b263b;
-  color: white;
+.btn-primary:hover {
+  background-color: #e07b07;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Gallery section styles */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+/* Accessibility focus styles */
+button:focus, a:focus, input:focus, textarea:focus {
+  outline: 2px solid #0aaac6;
+  outline-offset: 2px;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.gallery-image {
-  width: 100%;
-  aspect-ratio: 4/3;
+/* For images with proper aspect ratio */
+.img-aspect-ratio {
+  aspect-ratio: 16/9;
   object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.gallery-image:hover {
-  transform: scale(1.05);
-}
-
-.gallery-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  color: white;
 }
