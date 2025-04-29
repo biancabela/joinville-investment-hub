@@ -13,7 +13,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/5ae04f9e-db27-48b9-ae06-d84050b4efc2.png')"
+          backgroundImage: "url('/lovable-uploads/c6a66b7e-06c9-43a9-a2e9-01661b266184.png')"
         }}
       >
         <div className="absolute inset-0 bg-brand-navy/50"></div>
