@@ -32,7 +32,7 @@ const Highlights = () => {
           </div>
           
           {/* Right column with feature cards */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <FeatureCards compact={true} />
           </div>
         </div>
