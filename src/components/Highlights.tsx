@@ -64,29 +64,6 @@ const Highlights = () => {
             </div>
           </div>
         </div>
-        
-        {/* Statistics Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-16">
-          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
-            <h4 className="font-bold text-lg text-[#0b263b] mb-2">Área bruta locável</h4>
-            <p className="text-3xl font-bold text-[#ff8d08] group-hover:scale-105 transition-transform">32.000 m²</p>
-          </Card>
-          
-          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all group">
-            <h4 className="font-bold text-lg text-[#0b263b] mb-2">Rentabilidade</h4>
-            <p className="text-3xl font-bold text-[#ff8d08] group-hover:scale-105 transition-transform">1,04% a.m.</p>
-          </Card>
-          
-          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
-            <h4 className="font-bold text-lg text-[#0b263b] mb-2">Projeto exclusivo</h4>
-            <p className="text-xl font-medium text-[#0b263b]">Contratos BTS assinados</p>
-          </Card>
-          
-          <Card className="bg-gradient-to-r from-white to-[#f1f9fe] p-6 rounded-xl shadow-md border-0 hover:shadow-lg transition-all">
-            <h4 className="font-bold text-lg text-[#0b263b] mb-2">Dividendos previstos</h4>
-            <p className="text-xl font-medium text-[#0b263b]">A partir de Fev/2026</p>
-          </Card>
-        </div>
       </div>
     </section>
   );
