@@ -9,16 +9,16 @@ const InvestmentBenefits = () => {
         <div className="max-w-2xl mb-16">
           <p className="text-gray-500 font-light uppercase tracking-wider mb-2">INVESTIMENTO INTELIGENTE</p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0b263b] leading-tight">
-            ALTA RENTABILIDADE, <br />
-            BAIXA VACÂNCIA E <br />
-            INFRAESTRUTURA.
+            LOCALIZAÇÃO PRIVILEGIADA, <br />
+            ESTRUTURA MODERNA E <br />
+            ALTA QUALIDADE.
           </h2>
           
           <p className="mt-8 text-gray-600 leading-relaxed">
-            Investir no Joinville significa aproveitar rentabilidade alta, valorização acelerada e segurança para seu investimento. 
-            Com baixa vacância e demanda crescente, os galpões AAA do complexo se consolidam como uma oportunidade estratégica 
-            para investidores que buscam retornos sólidos no setor logístico. Além disso, é a escolha ideal para empresas 
-            que buscam localização estratégica, eficiência operacional, sustentabilidade, segurança e infraestrutura de alto nível.
+            Nosso empreendimento oferece uma combinação única de localização estratégica e 
+            infraestrutura de alto padrão, criando o ambiente ideal para seu negócio prosperar.
+            Com design moderno e espaços versáteis, proporcionamos a base perfeita para operações 
+            eficientes e produtivas.
           </p>
 
           <button className="mt-8 border-2 border-[#0b263b] text-[#0b263b] hover:bg-[#0b263b] hover:text-white transition-colors duration-300 rounded-full px-8 py-3 font-medium inline-flex items-center">
@@ -35,9 +35,9 @@ const InvestmentBenefits = () => {
                 <TrendingUp size={32} className="text-[#0b263b]" />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Alta rentabilidade</h3>
+            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Localização estratégica</h3>
             <p className="text-center text-gray-600">
-              O preço do m² para locação valorizou 78% nos últimos anos, uma das maiores altas do Brasil.
+              Acesso rápido às principais rodovias e rotas logísticas, otimizando sua cadeia de suprimentos.
             </p>
           </div>
 
@@ -48,9 +48,9 @@ const InvestmentBenefits = () => {
                 <BarChart2 size={32} className="text-[#0b263b]" />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Crescimento sólido</h3>
+            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Estrutura moderna</h3>
             <p className="text-center text-gray-600">
-              O PIB de Joinville cresceu 23,72% em um ano, impulsionado pelo setor logístico e industrial.
+              Espaços projetados com as mais recentes tecnologias e padrões internacionais de construção.
             </p>
           </div>
 
@@ -61,9 +61,9 @@ const InvestmentBenefits = () => {
                 <Building size={32} className="text-[#0b263b]" />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Baixa vacância</h3>
+            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Espaços flexíveis</h3>
             <p className="text-center text-gray-600">
-              Em Joinville, a taxa de ocupação é 97%, refletindo a forte demanda por espaços logísticos.
+              Adaptabilidade para diferentes operações, permitindo crescimento e ajustes conforme sua necessidade.
             </p>
           </div>
 
@@ -74,9 +74,9 @@ const InvestmentBenefits = () => {
                 <Percent size={32} className="text-[#0b263b]" />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Incentivos fiscais</h3>
+            <h3 className="text-xl font-semibold text-center text-[#0b263b] mb-4">Segurança avançada</h3>
             <p className="text-center text-gray-600">
-              ICMS reduzido de 17% para 12% e ISS de apenas 2%, garantindo mais custo-benefício para empresas instaladas.
+              Sistema de segurança completo com monitoramento 24h, controle de acesso e equipe especializada.
             </p>
           </div>
         </div>
