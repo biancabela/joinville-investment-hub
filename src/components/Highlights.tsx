@@ -36,19 +36,12 @@ const Highlights = () => {
           {/* Right side - Text content */}
           <div className="flex flex-col justify-center">
             <div className="text-left">
-              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Rentabilidade Real</h3>
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
-                Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações.
+                Este é um projeto exclusivo desenvolvido para entregar resultados concretos e consistentes. Com contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos, o investimento oferece retorno garantido desde o início das operações. A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
               </p>
               
-              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Segurança</h3>
               <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
-                A estrutura foi pensada para atender às demandas de empresas sólidas, com foco em ocupação de longo prazo e geração de caixa previsível.
-              </p>
-              
-              <h3 className="text-xl font-poppins font-semibold text-[#20314e] mb-3">Visão de Futuro</h3>
-              <p className="leading-relaxed font-opensans font-light text-base text-gray-600/90 mb-6">
-                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos.
+                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026, garantindo um fluxo de rendimentos alinhado ao cronograma de entrega e operação dos ativos. Com localização estratégica e estrutura de alto padrão, este investimento combina liquidez, segurança e alta performance, tornando-se uma excelente opção para quem busca acréscimo patrimonial com retorno real acima da inflação.
               </p>
             </div>
             
