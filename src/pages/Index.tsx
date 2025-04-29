@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
@@ -48,11 +47,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <FeatureCards />
       <main>
-        {/* Moved FeatureCards to appear earlier in the page structure */}
-        <div className="scroll-animate">
-          <FeatureCards />
-        </div>
         <div className="scroll-animate">
           <Highlights />
         </div>
