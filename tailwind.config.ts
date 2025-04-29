@@ -70,7 +70,7 @@ export default {
 				brand: {
 					blue: '#0aaac6',
 					orange: '#ff8d08',
-					navy: '#0b263b',
+					navy: '#20314e', // Updated to the requested color
 					'light-blue': 'rgba(10, 170, 198, 0.1)',
 					'dark-orange': '#e07b07',
 				}
