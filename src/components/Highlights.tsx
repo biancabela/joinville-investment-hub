@@ -2,6 +2,8 @@
 import { MapPin, Building, ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Highlights = () => {
   return (
