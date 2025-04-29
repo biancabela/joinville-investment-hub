@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
@@ -6,6 +7,7 @@ import Stats from "@/components/Stats";
 import JoinvilleData from "@/components/JoinvilleData";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import FeatureCards from "@/components/FeatureCards";
 
 const Index = () => {
   useEffect(() => {
@@ -47,6 +49,9 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
+        <div className="scroll-animate">
+          <FeatureCards />
+        </div>
         <div className="scroll-animate">
           <Highlights />
         </div>
