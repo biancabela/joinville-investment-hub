@@ -171,7 +171,7 @@ const Header = () => {
       <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Background with overlay gradient */}
         <div 
-          className="absolute inset-0 z-0" 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
           style={{ 
             backgroundImage: "url('/lovable-uploads/5ae04f9e-db27-48b9-ae06-d84050b4efc2.png')"
           }}
