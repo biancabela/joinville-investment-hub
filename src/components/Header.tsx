@@ -12,14 +12,22 @@ const Header = () => {
 
   return (
     <header className="bg-[#0b263b] min-h-screen flex flex-col items-center justify-center text-center relative px-4 lg:px-0">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b263b]/10 z-0"></div>
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0" 
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1551038247-3d9af20df552')",
+          backgroundPosition: "center",
+          backgroundSize: "cover"
+        }}
+      >
+        <div className="absolute inset-0 bg-[#0b263b]/70"></div>
+      </div>
+      
       <div className="container mx-auto z-10 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-          Invista com rentabilidade de 1.04% ao mês
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12">
+          Oportunidade única para investidores e empresários em Joinville
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
-          Oportunidades únicas para investidores e empresários em um mercado em expansão em Joinville
-        </p>
         <Button 
           onClick={() => scrollToSection('highlights')} 
           className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-medium py-6 px-8 text-lg rounded-md transition-all"
