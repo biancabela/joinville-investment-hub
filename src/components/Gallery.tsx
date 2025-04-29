@@ -60,12 +60,6 @@ const Gallery = () => {
                     loading="lazy"
                   />
                 </AspectRatio>
-                
-                {/* Overlay that appears on hover - updated color to brand navy */}
-                <div className="absolute inset-0 bg-brand-navy/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl font-poppins font-semibold mb-2 text-white">{item.title}</h3>
-                  <p className="text-gray-200 font-opensans font-light">{item.description}</p>
-                </div>
               </div>
             </Card>
           ))}
