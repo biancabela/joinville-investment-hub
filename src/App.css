@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -65,4 +65,43 @@ html {
 
 .text-soft-dark {
   color: rgba(31, 41, 55, 0.9);
+}
+
+/* Investment benefits section styles */
+.benefit-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgba(11, 38, 59, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* Custom button styles */
+.btn-outline {
+  border: 2px solid #0b263b;
+  color: #0b263b;
+  background: transparent;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #0b263b;
+  color: white;
 }
