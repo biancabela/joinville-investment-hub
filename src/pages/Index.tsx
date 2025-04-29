@@ -36,8 +36,8 @@ const Index = () => {
       
       document.querySelectorAll('.scroll-animate').forEach(el => {
         observer.observe(el);
-        // Initially hide the element
-        el.style.opacity = '0';
+        // Initially hide the element using classList instead of style
+        el.classList.add('opacity-0');
       });
     };
 
