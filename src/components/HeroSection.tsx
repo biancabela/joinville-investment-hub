@@ -1,23 +1,39 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 type HeroSectionProps = {
   scrollToSection: (id: string) => void;
 };
 
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+  const backgroundImageUrl = "/lovable-uploads/c6a66b7e-06c9-43a9-a2e9-01661b266184.png";
+  
+  // Pre-load the image to check if it loads correctly
+  useEffect(() => {
+    const img = new Image();
+    img.src = backgroundImageUrl;
+    img.onload = () => setImageLoaded(true);
+    img.onerror = () => setImageError(true);
+  }, [backgroundImageUrl]);
+
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background with overlay gradient */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
+        className={`absolute inset-0 z-0 bg-cover bg-center bg-no-repeat ${!imageLoaded && 'bg-brand-navy'}`}
         style={{ 
-          backgroundImage: "url('/lovable-uploads/c6a66b7e-06c9-43a9-a2e9-01661b266184.png')"
+          backgroundImage: !imageError ? `url('${backgroundImageUrl}')` : 'none',
         }}
       >
         <div className="absolute inset-0 bg-brand-navy/50"></div>
       </div>
+      
+      {/* Console log for debugging */}
+      {console.log("Background image status:", { imageLoaded, imageError, backgroundImageUrl })}
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
         <span className="inline-block text-brand-blue font-montserrat font-medium text-xl md:text-2xl mb-4 animate-fade-in">
