@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 type HeroSectionProps = {
   scrollToSection: (id: string) => void;
@@ -32,30 +33,56 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           backgroundImage: !imageError ? `url('${backgroundImageUrl}')` : 'none',
         }}
       >
-        <div className="absolute inset-0 bg-brand-navy/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-brand-navy/60 to-black/80"></div>
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
-        <span className="inline-block text-brand-blue font-montserrat font-medium text-xl md:text-2xl mb-4 animate-fade-in">
-          Projeto Multiuso Inovador
-        </span>
-
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 md:mb-10 tracking-tight leading-tight mx-auto animate-fade-in max-w-4xl">
-          Oportunidade única para investidores e empresários em Joinville
-        </h1>
-        
-        <Button 
-          onClick={() => scrollToSection('highlights')} 
-          className="bg-brand-orange hover:bg-brand-dark-orange text-white font-medium py-6 px-10 text-lg rounded-lg shadow-lg shadow-brand-orange/20 transform hover:translate-y-[-2px] transition-all animate-fade-in-delayed"
+        <motion.span 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="inline-block text-brand-orange font-montserrat font-medium text-xl md:text-2xl mb-4"
         >
-          Saiba Mais <ArrowDown className="ml-2 h-5 w-5" />
-        </Button>
+          Projeto Multiuso Inovador
+        </motion.span>
+
+        <motion.h1 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 md:mb-10 tracking-tight leading-tight mx-auto max-w-4xl"
+        >
+          Oportunidade única para investidores e empresários em Joinville
+        </motion.h1>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <Button 
+            onClick={() => scrollToSection('gallery')} 
+            className="bg-brand-orange hover:bg-brand-dark-orange text-white font-medium py-6 px-10 text-lg rounded-xl shadow-xl shadow-brand-orange/30 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-orange/40"
+          >
+            Saiba Mais <ArrowDown className="ml-2 h-5 w-5" />
+          </Button>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce animate-fade-in-delayed">
-        <ArrowDown className="h-8 w-8 text-brand-blue" />
-      </div>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="absolute bottom-10 left-0 right-0 flex justify-center"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        >
+          <ArrowDown className="h-8 w-8 text-brand-orange drop-shadow-lg" />
+        </motion.div>
+      </motion.div>
     </header>
   );
 };

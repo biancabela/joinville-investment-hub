@@ -141,6 +141,22 @@
   background-repeat: no-repeat;
 }
 
+/* Custom Leaflet styles */
+.leaflet-popup-content-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Card hover effects */
 .card-hover {
   transition: all 0.3s ease;
