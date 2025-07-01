@@ -45,7 +45,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             Oportunidade única para investidores
           </span>
           <br />
-          <span className="text-brand-orange animate-shimmer">
+          <span className="text-brand-orange">
             e empresários em Joinville
           </span>
         </h1>
