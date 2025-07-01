@@ -60,19 +60,6 @@ const Navigation = ({
             <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
           </a>
           <a 
-            href="#stats" 
-            className={`font-montserrat text-base hover:text-brand-orange transition-colors relative group ${
-              scrollPosition > 50 ? 'text-brand-navy' : 'text-white'
-            }`}
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('stats');
-            }}
-          >
-            Números
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a 
             href="#contact" 
             className={`font-montserrat text-base hover:text-brand-orange transition-colors relative group ${
               scrollPosition > 50 ? 'text-brand-navy' : 'text-white'
