@@ -141,15 +141,10 @@
   background-repeat: no-repeat;
 }
 
-/* Custom Leaflet styles */
-.leaflet-popup-content-wrapper {
-  background: white;
+/* Custom map styles */
+.map-container {
+  background: #1e293b;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.leaflet-popup-tip {
-  background: white;
 }
 
 /* Smooth scrolling */
