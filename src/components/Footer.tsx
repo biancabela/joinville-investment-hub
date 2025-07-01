@@ -1,37 +1,49 @@
 
-import { Mail, Phone, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, Facebook, Instagram, Linkedin, MapPin, Shield } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-brand-navy text-white py-16 px-6 lg:px-0">
       <div className="container mx-auto max-w-6xl">
+        {/* Badge de segurança */}
+        <div className="flex justify-center mb-12">
+          <div className="flex items-center bg-green-500 text-white px-6 py-3 rounded-full font-semibold">
+            <Shield className="h-5 w-5 mr-2" />
+            100% SEGURO - SEU DADO ESTÁ PROTEGIDO
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Joinville Investment Hub</h3>
+            <img 
+              src="/lovable-uploads/5cb0ddb3-da63-4cee-80f8-148159cb95bd.png" 
+              alt="GALPOMAX Logo" 
+              className="h-12 mb-6"
+            />
             <p className="text-gray-300 mb-6 font-opensans font-light">
-              Soluções de investimento imobiliário com foco em rentabilidade e segurança para investidores.
+              Operações de BTS | Venda e aluguel de galpões e terrenos industriais
             </p>
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                className="text-white hover:text-brand-blue transition-colors bg-white/10 p-2 rounded-full"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white hover:text-brand-blue transition-colors bg-white/10 p-2 rounded-full"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
                 aria-label="Instagram" 
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white hover:text-brand-blue transition-colors bg-white/10 p-2 rounded-full"
-                aria-label="Twitter"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
+                aria-label="LinkedIn"
               >
-                <Twitter className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -40,54 +52,63 @@ const Footer = () => {
             <h3 className="text-xl font-montserrat font-bold mb-6">Links Rápidos</h3>
             <ul className="space-y-3 font-opensans font-light">
               <li>
-                <a href="#" className="text-gray-300 hover:text-brand-blue transition-colors">Início</a>
+                <a href="#highlights" className="text-gray-300 hover:text-brand-orange transition-colors">Terrenos e Galpões</a>
               </li>
               <li>
-                <a href="#highlights" className="text-gray-300 hover:text-brand-blue transition-colors">Projeto</a>
+                <a href="#gallery" className="text-gray-300 hover:text-brand-orange transition-colors">Blog</a>
               </li>
               <li>
-                <a href="#gallery" className="text-gray-300 hover:text-brand-blue transition-colors">Galeria</a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-300 hover:text-brand-blue transition-colors">Contato</a>
+                <a href="#contact" className="text-gray-300 hover:text-brand-orange transition-colors">Contato</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Contatos</h3>
-            <div className="flex items-center mb-4">
-              <Phone className="h-5 w-5 mr-3 text-brand-blue" />
-              <a href="tel:+5547992935685" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
-                (47) 99293-5685
-              </a>
-            </div>
-            <div className="flex items-center">
-              <Mail className="h-5 w-5 mr-3 text-brand-blue" />
-              <a href="mailto:contato@galpomax.com.br" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
-                contato@galpomax.com.br
-              </a>
+            <h3 className="text-xl font-montserrat font-bold mb-6">Contato</h3>
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-3 text-brand-orange" />
+                <span className="text-gray-300 font-opensans font-light">
+                  Santa Catarina, Brasil
+                </span>
+              </div>
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 mr-3 text-brand-orange" />
+                <a href="tel:+5547992935685" className="text-gray-300 hover:text-brand-orange transition-colors font-opensans font-light">
+                  (47) 99293-5685
+                </a>
+              </div>
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 mr-3 text-brand-orange" />
+                <a href="tel:+5547999774795" className="text-gray-300 hover:text-brand-orange transition-colors font-opensans font-light">
+                  (47) 99977-4795
+                </a>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 mr-3 text-brand-orange" />
+                <a href="mailto:contato@galpomax.com" className="text-gray-300 hover:text-brand-orange transition-colors font-opensans font-light">
+                  contato@galpomax.com
+                </a>
+              </div>
             </div>
           </div>
           
           <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Endereço</h3>
+            <h3 className="text-xl font-montserrat font-bold mb-6">Sobre</h3>
             <p className="text-gray-300 font-opensans font-light">
-              Av. Santos Dumont, 1000<br />
-              Centro, Joinville - SC<br />
-              CEP: 89200-000
+              Especialistas em soluções industriais com foco em Build-to-Suit, oferecendo galpões e terrenos estrategicamente localizados para maximizar o potencial do seu negócio.
             </p>
           </div>
         </div>
         
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 md:mb-0 font-opensans font-light">
-            &copy; {new Date().getFullYear()} Joinville Investment Hub. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} GALPOMAX. Todos os direitos reservados.
           </p>
           
           <div className="flex gap-6 font-opensans font-light">
-            <a href="#" className="text-gray-400 hover:text-brand-blue transition-colors text-sm">Termos de Uso</a>
-            <a href="#" className="text-gray-400 hover:text-brand-blue transition-colors text-sm">Política de Privacidade</a>
+            <a href="#" className="text-gray-400 hover:text-brand-orange transition-colors text-sm">Termos de Uso</a>
+            <a href="#" className="text-gray-400 hover:text-brand-orange transition-colors text-sm">Política de Privacidade</a>
           </div>
         </div>
       </div>
