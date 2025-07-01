@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 
 import JoinvilleData from "@/components/JoinvilleData";
 import ContactForm from "@/components/ContactForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -60,6 +61,7 @@ const Index = () => {
           <ContactForm />
         </div>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );
