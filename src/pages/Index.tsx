@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import Highlights from "@/components/Highlights";
 import Gallery from "@/components/Gallery";
 import Stats from "@/components/Stats";
 import JoinvilleData from "@/components/JoinvilleData";
@@ -48,7 +48,7 @@ const Index = () => {
       <Header />
       <main>
         <div className="scroll-animate">
-          <HeroSection scrollToSection={(id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })} />
+          <Highlights />
         </div>
         <div className="scroll-animate">
           <Gallery />
