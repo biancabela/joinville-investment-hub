@@ -37,47 +37,44 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
 
   if (compact) {
     return (
-      <section className="w-full bg-gradient-to-br from-gray-50 to-white relative overflow-hidden" id="features">
-        {/* Background decoration */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-brand-blue/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-br from-brand-orange/10 to-transparent rounded-full blur-3xl"></div>
-        
-        <div className="max-w-6xl mx-auto relative z-10 py-12">
-          <div className="grid grid-cols-2 gap-8">
+      <div className="w-full relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 justify-items-center">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
                 <Card 
                   key={index}
-                  className="group w-[280px] h-[320px] bg-white/80 backdrop-blur-sm rounded-2xl border-none shadow-lg hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
+                  className="group w-72 h-80 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
                   style={{
                     animationDelay: `${index * 0.2}s`
                   }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-50/50 to-transparent"></div>
                   
-                  <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full relative z-10">
-                    <div className={`mb-6 rounded-2xl bg-gradient-to-br ${card.gradient} w-16 h-16 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className="h-8 w-8 text-white" />
+                  <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full relative z-10">
+                    <div className={`mb-8 rounded-3xl bg-gradient-to-br ${card.gradient} w-20 h-20 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                      <Icon className="h-10 w-10 text-white" />
                     </div>
                     
-                    <h3 className="text-xl font-bold mb-4 font-montserrat text-gray-900 group-hover:text-brand-navy transition-colors duration-300">
+                    <h3 className="text-2xl font-bold mb-6 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
                       {card.title}
                     </h3>
                     
-                    <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    <p className="text-base text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
                       {card.description}
                     </p>
                   </CardContent>
                   
                   {/* Shine effect */}
-                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 group-hover:left-full transition-all duration-700"></div>
+                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 group-hover:left-full transition-all duration-1000"></div>
                 </Card>
               );
             })}
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 
