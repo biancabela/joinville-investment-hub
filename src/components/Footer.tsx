@@ -58,14 +58,14 @@ const Footer = () => {
             <h3 className="text-xl font-montserrat font-bold mb-6">Contatos</h3>
             <div className="flex items-center mb-4">
               <Phone className="h-5 w-5 mr-3 text-brand-blue" />
-              <a href="tel:+5547999999999" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
-                (47) 99999-9999
+              <a href="tel:+5547992935685" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
+                (47) 99293-5685
               </a>
             </div>
             <div className="flex items-center">
               <Mail className="h-5 w-5 mr-3 text-brand-blue" />
-              <a href="mailto:contato@joinvilleinvest.com" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
-                contato@joinvilleinvest.com
+              <a href="mailto:contato@galpomax.com.br" className="text-gray-300 hover:text-brand-blue transition-colors font-opensans font-light">
+                contato@galpomax.com.br
               </a>
             </div>
           </div>
