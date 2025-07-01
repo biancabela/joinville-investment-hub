@@ -3,7 +3,7 @@ import { Mail, Phone, Facebook, Instagram, Linkedin, MapPin, Shield } from "luci
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-navy text-white py-16 px-6 lg:px-0">
+    <footer className="text-white py-16 px-6 lg:px-0" style={{backgroundColor: '#1a1f2c'}}>
       <div className="container mx-auto max-w-6xl">
         {/* Badge de segurança */}
         <div className="flex justify-center mb-12">

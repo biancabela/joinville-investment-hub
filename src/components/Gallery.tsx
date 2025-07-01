@@ -37,7 +37,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="section-spacing bg-brand-navy text-white px-4 lg:px-0" id="gallery">
+    <section className="section-spacing text-white px-4 lg:px-0" id="gallery" style={{backgroundColor: '#1a1f2c'}}>
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold mb-3 text-center">
           OPERAÇÕES DE ALTA EFICIÊNCIA
