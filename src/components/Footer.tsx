@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
           <div>
             <img 
               src="/lovable-uploads/5cb0ddb3-da63-4cee-80f8-148159cb95bd.png" 
@@ -46,21 +46,6 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Links Rápidos</h3>
-            <ul className="space-y-3 font-opensans font-light">
-              <li>
-                <a href="#highlights" className="text-gray-300 hover:text-brand-orange transition-colors">Terrenos e Galpões</a>
-              </li>
-              <li>
-                <a href="#gallery" className="text-gray-300 hover:text-brand-orange transition-colors">Blog</a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-300 hover:text-brand-orange transition-colors">Contato</a>
-              </li>
-            </ul>
           </div>
           
           <div>
