@@ -12,20 +12,41 @@ const Stats = () => {
           Experiência e credibilidade para transformar investimentos em resultados
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
-            <p className="text-4xl md:text-5xl font-poppins font-bold text-[#20314e] mb-4">16.000+</p>
-            <p className="text-gray-700 font-medium font-montserrat">Lotes entregues</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="group relative bg-gradient-to-br from-white to-gray-50 p-10 rounded-2xl shadow-xl border border-gray-100/50 hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col card-hover overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-orange to-brand-blue"></div>
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-brand-orange/10 to-transparent rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+            
+            <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
+              16.000<span className="text-brand-orange">+</span>
+            </p>
+            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Lotes entregues</p>
+            
+            <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-orange/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
-            <p className="text-4xl md:text-5xl font-poppins font-bold text-[#20314e] mb-4">14+</p>
-            <p className="text-gray-700 font-medium font-montserrat">Municípios atendidos</p>
+          <div className="group relative bg-gradient-to-br from-white to-gray-50 p-10 rounded-2xl shadow-xl border border-gray-100/50 hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col card-hover overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-blue to-brand-orange"></div>
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-brand-blue/10 to-transparent rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+            
+            <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
+              14<span className="text-brand-blue">+</span>
+            </p>
+            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Municípios atendidos</p>
+            
+            <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-blue/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-card text-left border border-gray-100 hover:bg-gray-50 active:bg-gray-100 transition-all cursor-pointer h-full flex flex-col">
-            <p className="text-4xl md:text-5xl font-poppins font-bold text-[#20314e] mb-4">27.000</p>
-            <p className="text-gray-700 font-medium font-montserrat">Projetos em andamento</p>
+          <div className="group relative bg-gradient-to-br from-white to-gray-50 p-10 rounded-2xl shadow-xl border border-gray-100/50 hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col card-hover overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-navy to-brand-orange"></div>
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-brand-navy/10 to-transparent rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+            
+            <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
+              27.000
+            </p>
+            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Projetos em andamento</p>
+            
+            <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-navy/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
         </div>
       </div>

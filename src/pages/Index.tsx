@@ -47,19 +47,19 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <div className="scroll-animate">
+        <div className="scroll-animate animate-slide-up">
           <Highlights />
         </div>
-        <div className="scroll-animate">
+        <div className="scroll-animate animate-fade-in">
           <Gallery />
         </div>
-        <div className="scroll-animate">
+        <div className="scroll-animate animate-scale-in">
           <JoinvilleData />
         </div>
-        <div className="scroll-animate">
+        <div className="scroll-animate animate-slide-up">
           <Stats />
         </div>
-        <div className="scroll-animate">
+        <div className="scroll-animate animate-fade-in">
           <ContactForm />
         </div>
       </main>
