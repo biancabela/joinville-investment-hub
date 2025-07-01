@@ -18,10 +18,8 @@ const Navigation = ({
 }: NavigationProps) => {
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrollPosition > 50 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg py-2 border-b border-gray-100' 
-          : 'bg-black/20 backdrop-blur-sm py-4'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrollPosition > 50 ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">

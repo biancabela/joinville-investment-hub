@@ -141,17 +141,6 @@
   background-repeat: no-repeat;
 }
 
-/* Custom map styles */
-.map-container {
-  background: #1e293b;
-  border-radius: 12px;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Card hover effects */
 .card-hover {
   transition: all 0.3s ease;
