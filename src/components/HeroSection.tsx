@@ -61,6 +61,17 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </Button>
       </div>
 
+      {/* Saiba Mais button - bottom right */}
+      <div className="absolute bottom-10 right-10">
+        <Button 
+          onClick={() => scrollToSection('highlights')} 
+          variant="outline"
+          className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300"
+        >
+          Saiba Mais
+        </Button>
+      </div>
+
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce animate-fade-in-delayed">
         <ArrowDown className="h-8 w-8 text-brand-blue" />
