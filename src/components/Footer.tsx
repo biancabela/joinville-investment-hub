@@ -25,23 +25,29 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
-                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
-                aria-label="Facebook"
+                href="https://www.facebook.com/galpomax" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20 transform hover:scale-105"
+                aria-label="Facebook da GALPOMAX"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
-                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
-                aria-label="Instagram" 
+                href="https://www.instagram.com/galpomax" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20 transform hover:scale-105"
+                aria-label="Instagram da GALPOMAX" 
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
-                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full"
-                aria-label="LinkedIn"
+                href="https://www.linkedin.com/company/galpomax" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-brand-orange transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20 transform hover:scale-105"
+                aria-label="LinkedIn da GALPOMAX"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
