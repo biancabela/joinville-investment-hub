@@ -27,12 +27,13 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
     <header className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background with overlay gradient */}
       <div 
-        className={`absolute inset-0 z-0 bg-cover bg-center bg-no-repeat ${!imageLoaded && 'bg-brand-navy'}`}
+        className={`absolute inset-0 z-0 bg-cover bg-center bg-no-repeat`}
         style={{ 
           backgroundImage: !imageError ? `url('${backgroundImageUrl}')` : 'none',
+          backgroundColor: !imageLoaded ? '#1a1f2c' : 'transparent'
         }}
       >
-        <div className="absolute inset-0 bg-brand-navy/60"></div>
+        <div className="absolute inset-0" style={{backgroundColor: 'rgba(26, 31, 44, 0.6)'}}></div>
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
