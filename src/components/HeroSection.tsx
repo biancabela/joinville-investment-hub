@@ -61,12 +61,11 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </Button>
       </div>
 
-      {/* Saiba Mais button - bottom right */}
-      <div className="absolute bottom-10 right-10">
+      {/* Saiba Mais CTA button - bottom right */}
+      <div className="absolute bottom-20 right-10">
         <Button 
           onClick={() => scrollToSection('highlights')} 
-          variant="outline"
-          className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300"
+          className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-brand-orange hover:border-white"
         >
           Saiba Mais
         </Button>
