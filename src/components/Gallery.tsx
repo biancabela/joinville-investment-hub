@@ -43,9 +43,13 @@ const Gallery = () => {
           ESPECIFICAÇÕES DO PROJETO
         </h2>
         
-        <p className="text-base md:text-lg font-opensans font-light text-center text-gray-300 mb-16 max-w-3xl mx-auto">
-          área total 54.000 m2, 32.000 m² de área bruta locável, Polo comercial com acesso a mais de 150 mil pessoas
-        </p>
+        <div className="text-base md:text-lg font-opensans font-light text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+          <ul className="space-y-2 text-left">
+            <li>• Área total: 54.000 m²</li>
+            <li>• Área bruta locável: 32.000 m²</li>
+            <li>• Polo comercial com acesso a mais de 150 mil pessoas</li>
+          </ul>
+        </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {galleryItems.map((item, index) => (

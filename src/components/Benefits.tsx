@@ -6,9 +6,13 @@ const Benefits = () => {
     <section className="py-20 bg-gray-50 px-4 lg:px-0">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0b263b] mb-4 text-center">Benefícios para Investidores</h2>
-        <p className="text-lg text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-          área total 54.000 m2, 32.000 m² de área bruta locável, Polo comercial com acesso a mais de 150 mil pessoas
-        </p>
+        <div className="text-lg text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+          <ul className="space-y-2 text-left">
+            <li>• Área total: 54.000 m²</li>
+            <li>• Área bruta locável: 32.000 m²</li>
+            <li>• Polo comercial com acesso a mais de 150 mil pessoas</li>
+          </ul>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all">
