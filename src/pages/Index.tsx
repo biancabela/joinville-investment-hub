@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
 import Gallery from "@/components/Gallery";
-
-import JoinvilleData from "@/components/JoinvilleData";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
@@ -53,9 +51,6 @@ const Index = () => {
         </div>
         <div className="scroll-animate animate-fade-in">
           <Gallery />
-        </div>
-        <div className="scroll-animate animate-scale-in">
-          <JoinvilleData />
         </div>
         <div className="scroll-animate animate-fade-in">
           <ContactForm />
