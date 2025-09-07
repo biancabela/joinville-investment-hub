@@ -1,171 +1,130 @@
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Building2, MapPin, TrendingUp, Shield, Banknote, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Handshake, FileText, DollarSign } from "lucide-react";
 
-interface FeatureCardsProps {
-  compact?: boolean;
-}
-
-const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
-  // If compact mode is enabled, use a different layout
-  const cards = [
+const FeatureCards = () => {
+  const features = [
+    {
+      icon: Building2,
+      title: "Infraestrutura Premium",
+      description: "32.000m² de área bruta locável com especificações técnicas de alto padrão",
+      benefits: ["700 vagas de estacionamento", "Pé direito otimizado", "Docas de carga modernas"]
+    },
+    {
+      icon: MapPin,
+      title: "Localização Estratégica",
+      description: "Posicionamento privilegiado na BR-101, principal corredor logístico do Sul",
+      benefits: ["Acesso direto à rodovia", "Proximidade aos portos", "Centro de distribuição ideal"]
+    },
     {
       icon: TrendingUp,
-      title: "Alta Rentabilidade Garantida",
-      description: "1,04% ao mês de rendimento com proteção contra inflação e crescimento do setor logístico",
-      benefit: "💰 Seu dinheiro trabalha melhor que poupança",
-      gradient: "from-green-500 to-emerald-600"
+      title: "Rentabilidade Consistente",
+      description: "Performance financeira estruturada com proteção inflacionária",
+      benefits: ["1,04% ao mês", "IPCA + 3% ao ano", "Receita previsível"]
     },
     {
-      icon: Handshake,
-      title: "Segurança Total do Investimento", 
-      description: "Contratos BTS já assinados garantem receita desde o primeiro dia de operação",
-      benefit: "🛡️ Risco mínimo, retorno máximo",
-      gradient: "from-blue-500 to-cyan-600"
+      icon: Shield,
+      title: "Segurança Jurídica",
+      description: "Contratos BTS já assinados garantindo estabilidade desde o início",
+      benefits: ["100% pré-locado", "Inquilinos qualificados", "Garantias contratuais"]
     },
     {
-      icon: FileText,
-      title: "Oportunidade de Grande Escala",
-      description: "32.000 m² de alta capacidade de locação em mercado com alta demanda",
-      benefit: "📈 Potencial de valorização exponencial",
-      gradient: "from-purple-500 to-violet-600"
+      icon: Banknote,
+      title: "Estrutura de Investimento",
+      description: "Modelo de cotas acessível para investidores qualificados",
+      benefits: ["Cotas fracionadas", "Gestão profissional", "Liquidez estruturada"]
     },
     {
-      icon: DollarSign,
-      title: "Localização Estratégica Única",
-      description: "Acesso direto BR-101, facilitando escoamento e atraindo grandes centros de distribuição",
-      benefit: "🎯 Localização premium, rentabilidade premium",
-      gradient: "from-orange-500 to-red-600"
+      icon: Users,
+      title: "Mercado Consolidado",
+      description: "Região com mais de 150 mil habitantes e forte atividade industrial",
+      benefits: ["Economia diversificada", "Polo tecnológico", "Crescimento sustentável"]
     }
   ];
 
-  if (compact) {
-    return (
-      <div className="w-full relative z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 justify-items-center">
-            {cards.map((card, index) => {
-              const Icon = card.icon;
-              return (
-                <Card 
-                  key={index}
-                  className="group w-72 h-80 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
-                  style={{
-                    animationDelay: `${index * 0.2}s`
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-50/50 to-transparent"></div>
-                  
-                  <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full relative z-10">
-                    <div className={`mb-8 rounded-3xl bg-gradient-to-br ${card.gradient} w-20 h-20 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
-                      <Icon className="h-10 w-10 text-white" />
-                    </div>
-                    
-                    <h3 className="text-xl font-bold mb-3 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
-                      {card.title}
-                    </h3>
-                    
-                    <div className="mb-4 px-3 py-1 bg-brand-orange/10 rounded-full">
-                      <p className="text-sm font-semibold text-brand-orange">
-                        {card.benefit}
-                      </p>
-                    </div>
-                    
-                    <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
-                      {card.description}
-                    </p>
-                  </CardContent>
-                  
-                  {/* Shine effect */}
-                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 group-hover:left-full transition-all duration-1000"></div>
-                </Card>
-              );
-            })}
-          </div>
-          
-          {/* CTA após os cards */}
-          <div className="text-center mt-16 animate-fade-in-delayed">
-            <Button 
-              onClick={() => {
-                const element = document.getElementById('contact');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-bold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/30 transform hover:scale-105 transition-all duration-300 animate-glow relative overflow-hidden group"
-            >
-              <span className="relative z-10">💼 QUERO RECEBER PROPOSTA</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            </Button>
-            <p className="text-sm text-gray-600 mt-3">
-              Sem compromisso • Análise gratuita • Resposta em 24h
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Regular (non-compact) layout
   return (
-    <section className="py-8 bg-white w-full" id="features">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {/* Rentabilidade */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <TrendingUp className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Rentabilidade</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
-                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026
-              </p>
-            </CardContent>
-          </Card>
+    <section className="section-spacing bg-white px-6 lg:px-0">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl executive-heading mb-6">
+            Fundamentos do <span className="text-brand-gold">Investimento</span>
+          </h2>
+          <p className="text-xl executive-text max-w-3xl mx-auto">
+            Características técnicas e comerciais que sustentam a performance deste ativo
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-brand-gold to-brand-blue mx-auto mt-8"></div>
+        </div>
 
-          {/* Segurança */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <Handshake className="h-8 w-8 text-black" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div 
+                key={index}
+                className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200/50 hover:border-brand-gold/30"
+              >
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue to-brand-gold rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  <p className="executive-text leading-relaxed mb-4">
+                    {feature.description}
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  {feature.benefits.map((benefit, benefitIndex) => (
+                    <div key={benefitIndex} className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-brand-gold rounded-full"></div>
+                      <span className="text-sm text-slate-600">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Segurança</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
-                Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos
-              </p>
-            </CardContent>
-          </Card>
+            );
+          })}
+        </div>
 
-          {/* Diversificação */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <FileText className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Diversificação</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
-                32.000 m² de área bruta locável
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Localização Estratégica */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <DollarSign className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Localização Estratégica</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
-                Polo comercial com acesso a mais de 150 mil pessoas
-              </p>
-            </CardContent>
-          </Card>
+        <div className="text-center">
+          <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200/50">
+            <h3 className="text-2xl font-bold executive-heading mb-4">
+              Pronto para Conhecer os Detalhes?
+            </h3>
+            <p className="executive-text mb-6 max-w-2xl mx-auto">
+              Solicite uma apresentação detalhada do investimento
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-brand-gold hover:bg-brand-gold/90 text-white px-8 py-3 font-semibold rounded-lg shadow-lg transition-all duration-300"
+              >
+                Solicitar Apresentação
+              </Button>
+              <Button 
+                onClick={() => {
+                  const phoneNumber = "5547992935685";
+                  const message = "Gostaria de conhecer os detalhes do investimento em Joinville";
+                  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
+                variant="outline"
+                className="border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white px-8 py-3 font-semibold rounded-lg"
+              >
+                Falar com Consultor
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
+export default FeatureCards;
 
 export default FeatureCards;

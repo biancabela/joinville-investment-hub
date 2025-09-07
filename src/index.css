@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -96,7 +96,8 @@
   
   body {
     @apply bg-background text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -107,11 +108,20 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-montserrat font-bold tracking-tight;
+    @apply font-playfair font-semibold tracking-tight;
+  }
+  
+  .executive-text {
+    @apply text-slate-600 leading-relaxed;
+  }
+  
+  .executive-heading {
+    @apply text-slate-900 font-playfair;
   }
 }
 
