@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Handshake, Percent, CreditCard } from "lucide-react";
+import { TrendingUp, Handshake, Percent } from "lucide-react";
 
 interface FeatureCardsProps {
   compact?: boolean;
@@ -26,12 +26,6 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       title: "Rentabilidade",
       description: "Rentabilidade de 1%",
       gradient: "from-purple-500 to-violet-600"
-    },
-    {
-      icon: CreditCard,
-      title: "Condições de Pagamento",
-      description: "Apenas 05 cotas de R$ 2.000.000,00 Entrada e saldo parcelado!",
-      gradient: "from-orange-500 to-red-600"
     }
   ];
 
@@ -39,7 +33,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
     return (
       <div className="w-full relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
@@ -69,6 +63,13 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               );
             })}
           </div>
+          
+          {/* Condições de Pagamento */}
+          <div className="mt-16 text-center">
+            <p className="text-2xl md:text-3xl font-bold text-brand-navy">
+              Apenas 05 cotas de R$ 2.000.000,00 Entrada e saldo parcelado!
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -78,7 +79,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
   return (
     <section className="py-8 bg-white w-full" id="features">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Rentabilidade */}
           <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
@@ -114,18 +115,13 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               </p>
             </CardContent>
           </Card>
-
-          {/* Condições de Pagamento */}
-          <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-6">
-                <CreditCard className="h-16 w-16 text-brand-orange" />
-              </div>
-              <p className="text-xl text-gray-600 px-2 text-justify leading-relaxed">
-                Apenas 05 cotas de R$ 2.000.000,00 Entrada e saldo parcelado!
-              </p>
-            </CardContent>
-          </Card>
+        </div>
+        
+        {/* Condições de Pagamento */}
+        <div className="mt-16 text-center">
+          <p className="text-2xl md:text-3xl font-bold text-brand-navy">
+            Apenas 05 cotas de R$ 2.000.000,00 Entrada e saldo parcelado!
+          </p>
         </div>
       </div>
     </section>
