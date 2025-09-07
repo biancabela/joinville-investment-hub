@@ -39,7 +39,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
     return (
       <div className="w-full relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 justify-items-center">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
@@ -78,7 +78,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
   return (
     <section className="py-8 bg-white w-full" id="features">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Rentabilidade */}
           <Card className="w-[300px] h-[240px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
