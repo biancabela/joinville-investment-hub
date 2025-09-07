@@ -40,12 +40,11 @@ const Gallery = () => {
     <section className="section-spacing text-white px-4 lg:px-0" id="gallery" style={{backgroundColor: '#1a1f2c'}}>
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold mb-3 text-center">
-          OPERAÇÕES DE ALTA EFICIÊNCIA
+          ESPECIFICAÇÕES DO PROJETO
         </h2>
         
         <p className="text-base md:text-lg font-opensans font-light text-center text-gray-300 mb-16 max-w-3xl mx-auto">
-          O empreendimento foi projetado para otimizar logística e produtividade, 
-          garantindo um ambiente seguro, eficiente e preparado para operações de alta performance.
+          área total 54.000 m2, 32.000 m² de área bruta locável, Polo comercial com acesso a mais de 150 mil pessoas
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
