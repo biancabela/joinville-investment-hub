@@ -14,9 +14,6 @@ const Highlights = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy mb-6 animate-slide-up">
             Por que <span className="text-brand-orange">Investir</span>?
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 font-opensans max-w-4xl mx-auto animate-fade-in">
-            Descubra as vantagens exclusivas que fazem deste projeto uma oportunidade única de investimento
-          </p>
           <div className="w-24 h-1 bg-gradient-to-r from-brand-orange to-brand-blue mx-auto mt-8 animate-scale-in"></div>
         </div>
         
