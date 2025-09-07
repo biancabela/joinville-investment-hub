@@ -11,26 +11,30 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
   const cards = [
     {
       icon: TrendingUp,
-      title: "Rentabilidade",
-      description: "Os dividendos estão previstos para iniciar a partir de fevereiro de 2026",
+      title: "Alta Rentabilidade Garantida",
+      description: "1,04% ao mês de rendimento com proteção contra inflação e crescimento do setor logístico",
+      benefit: "💰 Seu dinheiro trabalha melhor que poupança",
       gradient: "from-green-500 to-emerald-600"
     },
     {
       icon: Handshake,
-      title: "Segurança", 
-      description: "Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos",
+      title: "Segurança Total do Investimento", 
+      description: "Contratos BTS já assinados garantem receita desde o primeiro dia de operação",
+      benefit: "🛡️ Risco mínimo, retorno máximo",
       gradient: "from-blue-500 to-cyan-600"
     },
     {
       icon: FileText,
-      title: "Diversificação",
-      description: "32.000 m² de área bruta locável",
+      title: "Oportunidade de Grande Escala",
+      description: "32.000 m² de alta capacidade de locação em mercado com alta demanda",
+      benefit: "📈 Potencial de valorização exponencial",
       gradient: "from-purple-500 to-violet-600"
     },
     {
       icon: DollarSign,
-      title: "Localização Estratégica",
-      description: "Polo comercial com acesso a mais de 150 mil pessoas",
+      title: "Localização Estratégica Única",
+      description: "Acesso direto BR-101, facilitando escoamento e atraindo grandes centros de distribuição",
+      benefit: "🎯 Localização premium, rentabilidade premium",
       gradient: "from-orange-500 to-red-600"
     }
   ];
@@ -58,11 +62,17 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                       <Icon className="h-10 w-10 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-6 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
+                    <h3 className="text-xl font-bold mb-3 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
                       {card.title}
                     </h3>
                     
-                    <p className="text-base text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
+                    <div className="mb-4 px-3 py-1 bg-brand-orange/10 rounded-full">
+                      <p className="text-sm font-semibold text-brand-orange">
+                        {card.benefit}
+                      </p>
+                    </div>
+                    
+                    <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
                       {card.description}
                     </p>
                   </CardContent>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Highlights from "@/components/Highlights";
+import SocialProof from "@/components/SocialProof";
 import Gallery from "@/components/Gallery";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -48,6 +49,9 @@ const Index = () => {
       <main>
         <div className="scroll-animate animate-slide-up">
           <Highlights />
+        </div>
+        <div className="scroll-animate animate-scale-in">
+          <SocialProof />
         </div>
         <div className="scroll-animate animate-fade-in">
           <Gallery />

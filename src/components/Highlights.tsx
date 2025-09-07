@@ -12,12 +12,24 @@ const Highlights = () => {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy mb-6 animate-slide-up">
-            Por que <span className="text-brand-orange">Investir</span>?
+            Benefícios <span className="text-brand-orange">Exclusivos</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 font-opensans max-w-4xl mx-auto animate-fade-in">
-            Descubra as vantagens exclusivas que fazem deste projeto uma oportunidade única de investimento
+            Transforme recursos técnicos em benefícios práticos para seu patrimônio
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-brand-orange to-brand-blue mx-auto mt-8 animate-scale-in"></div>
+          
+          {/* CTA destacado */}
+          <div className="mt-8 mb-12 animate-scale-in">
+            <div className="inline-flex items-center gap-4 bg-brand-orange/10 border border-brand-orange/30 rounded-2xl px-8 py-4">
+              <div className="text-2xl">🎯</div>
+              <div className="text-left">
+                <p className="text-brand-orange font-bold text-lg">Investimento Mínimo: R$ 2 milhões</p>
+                <p className="text-gray-600 text-sm">Cotas fracionadas disponíveis</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="w-24 h-1 bg-gradient-to-r from-brand-orange to-brand-blue mx-auto animate-scale-in"></div>
         </div>
         
         <div className="flex justify-center">
