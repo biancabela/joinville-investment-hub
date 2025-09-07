@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Handshake, FileText, DollarSign } from "lucide-react";
+import { TrendingUp, Handshake } from "lucide-react";
 
 interface FeatureCardsProps {
   compact?: boolean;
@@ -20,18 +20,6 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       title: "Segurança", 
       description: "Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos",
       gradient: "from-blue-500 to-cyan-600"
-    },
-    {
-      icon: FileText,
-      title: "Diversificação",
-      description: "32.000 m² de área bruta locável",
-      gradient: "from-purple-500 to-violet-600"
-    },
-    {
-      icon: DollarSign,
-      title: "Localização Estratégica",
-      description: "Polo comercial com acesso a mais de 150 mil pessoas",
-      gradient: "from-orange-500 to-red-600"
     }
   ];
 
@@ -39,7 +27,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
     return (
       <div className="w-full relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center max-w-4xl mx-auto">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
@@ -99,30 +87,6 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               </div>
               <p className="text-lg text-gray-600 px-2 text-justify">
                 Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Diversificação */}
-          <Card className="w-[300px] h-[200px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4">
-                <FileText className="h-12 w-12 text-brand-orange" />
-              </div>
-              <p className="text-lg text-gray-600 px-2 text-justify">
-                32.000 m² de área bruta locável
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Localização Estratégica */}
-          <Card className="w-[300px] h-[240px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4">
-                <DollarSign className="h-12 w-12 text-brand-orange" />
-              </div>
-              <p className="text-lg text-gray-600 px-2 text-justify">
-                Polo comercial com acesso a mais de 150 mil pessoas
               </p>
             </CardContent>
           </Card>
