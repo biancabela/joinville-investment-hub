@@ -12,7 +12,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
     {
       icon: TrendingUp,
       title: "Rentabilidade",
-      description: "Os dividendos estão previstos para iniciar a partir de fevereiro de 2026",
+      description: "Dividendos a partir de fevereiro de 2026",
       gradient: "from-green-500 to-emerald-600"
     },
     {
@@ -86,7 +86,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 <TrendingUp className="h-16 w-16 text-brand-orange" />
               </div>
               <p className="text-xl text-gray-600 px-2 text-justify leading-relaxed">
-                Os dividendos estão previstos para iniciar a partir de fevereiro de 2026
+                Dividendos a partir de fevereiro de 2026
               </p>
             </CardContent>
           </Card>
