@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { TrendingUp, Handshake, FileText, DollarSign } from "lucide-react";
 
 interface FeatureCardsProps {
@@ -82,6 +83,23 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 </Card>
               );
             })}
+          </div>
+          
+          {/* CTA após os cards */}
+          <div className="text-center mt-16 animate-fade-in-delayed">
+            <Button 
+              onClick={() => {
+                const element = document.getElementById('contact');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-bold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/30 transform hover:scale-105 transition-all duration-300 animate-glow relative overflow-hidden group"
+            >
+              <span className="relative z-10">💼 QUERO RECEBER PROPOSTA</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </Button>
+            <p className="text-sm text-gray-600 mt-3">
+              Sem compromisso • Análise gratuita • Resposta em 24h
+            </p>
           </div>
         </div>
       </div>

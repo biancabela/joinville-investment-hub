@@ -1,4 +1,5 @@
 import { Shield, Award, Users, Building2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const SocialProof = () => {
   const testimonials = [
@@ -122,8 +123,46 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Trust Indicators */}
+        {/* CTA Principal */}
         <div className="mt-16 text-center">
+          <div className="bg-gradient-to-br from-brand-navy to-brand-blue rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-orange/10 to-brand-blue/10"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                Pronto para <span className="text-brand-orange">Investir</span>?
+              </h3>
+              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Garante sua participação neste investimento de alto rendimento com segurança garantida
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="bg-brand-orange hover:bg-brand-dark-orange text-white font-bold py-4 px-8 text-lg rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
+                >
+                  🚀 QUERO INVESTIR AGORA
+                </Button>
+                <Button 
+                  onClick={() => {
+                    const phoneNumber = "5547992935685";
+                    const message = "Quero mais informações sobre o investimento em Joinville!";
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-brand-navy font-bold py-4 px-8 text-lg rounded-xl"
+                >
+                  📱 FALAR NO WHATSAPP
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Trust Indicators */}
+        <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-8 bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-lg">
             <div className="flex items-center gap-2">
               <Shield className="h-6 w-6 text-green-600" />

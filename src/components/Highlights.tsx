@@ -35,6 +35,41 @@ const Highlights = () => {
         <div className="flex justify-center">
           <FeatureCards compact={true} />
         </div>
+        
+        {/* CTA Adicional */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-brand-orange/10 to-brand-blue/10 rounded-2xl p-8 max-w-3xl mx-auto border border-brand-orange/20">
+            <h3 className="text-2xl md:text-3xl font-bold text-brand-navy mb-4">
+              Últimas Oportunidades Disponíveis
+            </h3>
+            <p className="text-gray-700 mb-6 text-lg">
+              Restam poucas cotas para este investimento exclusivo
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-brand-orange hover:bg-brand-dark-orange text-white font-bold py-4 px-8 text-lg rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                ⚡ RESERVAR AGORA
+              </Button>
+              <Button 
+                onClick={() => {
+                  const phoneNumber = "5547992935685";
+                  const message = "Gostaria de saber sobre as cotas disponíveis do Hub de Joinville";
+                  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
+                variant="outline"
+                className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold py-4 px-8 text-lg rounded-xl"
+              >
+                📞 FALAR COM CONSULTOR
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

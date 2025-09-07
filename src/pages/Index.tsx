@@ -5,6 +5,7 @@ import SocialProof from "@/components/SocialProof";
 import Gallery from "@/components/Gallery";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import StickyBanner from "@/components/StickyBanner";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -61,6 +62,7 @@ const Index = () => {
         </div>
       </main>
       <WhatsAppButton />
+      <StickyBanner />
       <Footer />
     </div>
   );

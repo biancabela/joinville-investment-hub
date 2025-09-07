@@ -79,10 +79,26 @@ const ContactForm = () => {
             <div className="text-center">
               <Button 
                 type="submit"
-                className="bg-brand-orange hover:bg-brand-dark-orange text-white font-montserrat font-medium py-3 px-8 text-lg rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
+                className="bg-brand-orange hover:bg-brand-dark-orange text-white font-montserrat font-medium py-3 px-8 text-lg rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto mb-4"
               >
                 <Mail className="mr-2 h-5 w-5" /> Solicitar informações
               </Button>
+              
+              <div className="text-center mt-4">
+                <p className="text-gray-600 mb-4 text-sm">Ou entre em contato direto:</p>
+                <Button 
+                  onClick={() => {
+                    const phoneNumber = "5547992935685";
+                    const message = "Quero investir no Hub de Joinville! Preciso de mais informações.";
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                  variant="outline"
+                  className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold py-3 px-8 text-lg rounded-lg w-full md:w-auto"
+                >
+                  💬 CONVERSAR NO WHATSAPP
+                </Button>
+              </div>
             </div>
           </form>
         </div>
