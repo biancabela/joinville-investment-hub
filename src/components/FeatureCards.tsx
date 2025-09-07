@@ -45,7 +45,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               return (
                 <Card 
                   key={index}
-                  className="group w-80 h-96 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
+                  className="group w-80 h-64 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
                   style={{
                     animationDelay: `${index * 0.2}s`
                   }}
@@ -80,48 +80,48 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {/* Rentabilidade */}
-          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[300px] h-[240px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-6">
+              <div className="mb-4">
                 <TrendingUp className="h-12 w-12 text-brand-orange" />
               </div>
-              <p className="text-lg text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 px-2 text-justify">
                 Os dividendos estão previstos para iniciar a partir de fevereiro de 2026
               </p>
             </CardContent>
           </Card>
 
           {/* Segurança */}
-          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[300px] h-[240px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-6">
+              <div className="mb-4">
                 <Handshake className="h-12 w-12 text-brand-orange" />
               </div>
-              <p className="text-lg text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 px-2 text-justify">
                 Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos
               </p>
             </CardContent>
           </Card>
 
           {/* Diversificação */}
-          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[300px] h-[200px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-6">
+              <div className="mb-4">
                 <FileText className="h-12 w-12 text-brand-orange" />
               </div>
-              <p className="text-lg text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 px-2 text-justify">
                 32.000 m² de área bruta locável
               </p>
             </CardContent>
           </Card>
 
           {/* Localização Estratégica */}
-          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[300px] h-[240px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-6">
+              <div className="mb-4">
                 <DollarSign className="h-12 w-12 text-brand-orange" />
               </div>
-              <p className="text-lg text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 px-2 text-justify">
                 Polo comercial com acesso a mais de 150 mil pessoas
               </p>
             </CardContent>
