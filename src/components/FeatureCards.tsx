@@ -45,7 +45,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               return (
                 <Card 
                   key={index}
-                  className="group w-72 h-80 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
+                  className="group w-80 h-96 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
                   style={{
                     animationDelay: `${index * 0.2}s`
                   }}
@@ -54,15 +54,15 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-50/50 to-transparent"></div>
                   
                   <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full relative z-10">
-                    <div className={`mb-8 rounded-3xl bg-gradient-to-br ${card.gradient} w-20 h-20 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
-                      <Icon className="h-10 w-10 text-white" />
+                    <div className="mb-8">
+                      <Icon className="h-16 w-16 text-brand-orange group-hover:scale-110 transition-all duration-500" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-6 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
+                    <h3 className="text-3xl font-bold mb-6 font-montserrat text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
                       {card.title}
                     </h3>
                     
-                    <p className="text-base text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
                       {card.description}
                     </p>
                   </CardContent>
@@ -84,52 +84,52 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {/* Rentabilidade */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <TrendingUp className="h-8 w-8 text-black" />
+          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="mb-6">
+                <TrendingUp className="h-12 w-12 text-brand-orange" />
               </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Rentabilidade</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
+              <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Rentabilidade</h3>
+              <p className="text-base text-gray-600 p-4 text-justify">
                 Os dividendos estão previstos para iniciar a partir de fevereiro de 2026
               </p>
             </CardContent>
           </Card>
 
           {/* Segurança */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <Handshake className="h-8 w-8 text-black" />
+          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="mb-6">
+                <Handshake className="h-12 w-12 text-brand-orange" />
               </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Segurança</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
+              <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Segurança</h3>
+              <p className="text-base text-gray-600 p-4 text-justify">
                 Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos
               </p>
             </CardContent>
           </Card>
 
           {/* Diversificação */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <FileText className="h-8 w-8 text-black" />
+          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="mb-6">
+                <FileText className="h-12 w-12 text-brand-orange" />
               </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Diversificação</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
+              <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Diversificação</h3>
+              <p className="text-base text-gray-600 p-4 text-justify">
                 32.000 m² de área bruta locável
               </p>
             </CardContent>
           </Card>
 
           {/* Localização Estratégica */}
-          <Card className="w-[250px] h-[300px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
-            <CardContent className="p-4 flex flex-col items-center justify-center text-center h-full">
-              <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center shadow-sm">
-                <DollarSign className="h-8 w-8 text-black" />
+          <Card className="w-[320px] h-[380px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="mb-6">
+                <DollarSign className="h-12 w-12 text-brand-orange" />
               </div>
-              <h3 className="text-lg font-bold mb-2 font-montserrat text-gray-900">Localização Estratégica</h3>
-              <p className="text-sm text-gray-600 p-4 text-justify">
+              <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Localização Estratégica</h3>
+              <p className="text-base text-gray-600 p-4 text-justify">
                 Polo comercial com acesso a mais de 150 mil pessoas
               </p>
             </CardContent>
