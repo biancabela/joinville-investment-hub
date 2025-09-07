@@ -62,7 +62,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                       {card.title}
                     </h3>
                     
-                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
+                    <p className="text-xl text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
                       {card.description}
                     </p>
                   </CardContent>
@@ -90,7 +90,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 <TrendingUp className="h-12 w-12 text-brand-orange" />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Rentabilidade</h3>
-              <p className="text-base text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 p-4 text-justify">
                 Os dividendos estão previstos para iniciar a partir de fevereiro de 2026
               </p>
             </CardContent>
@@ -103,7 +103,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 <Handshake className="h-12 w-12 text-brand-orange" />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Segurança</h3>
-              <p className="text-base text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 p-4 text-justify">
                 Contratos BTS (Build-to-Suit) já assinados com inquilinos estratégicos
               </p>
             </CardContent>
@@ -116,7 +116,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 <FileText className="h-12 w-12 text-brand-orange" />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Diversificação</h3>
-              <p className="text-base text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 p-4 text-justify">
                 32.000 m² de área bruta locável
               </p>
             </CardContent>
@@ -129,7 +129,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                 <DollarSign className="h-12 w-12 text-brand-orange" />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-montserrat text-gray-900">Localização Estratégica</h3>
-              <p className="text-base text-gray-600 p-4 text-justify">
+              <p className="text-lg text-gray-600 p-4 text-justify">
                 Polo comercial com acesso a mais de 150 mil pessoas
               </p>
             </CardContent>
