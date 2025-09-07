@@ -45,7 +45,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               return (
                 <Card 
                   key={index}
-                  className="group w-96 h-80 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
+                  className="group w-80 h-96 bg-white/90 backdrop-blur-sm rounded-3xl border border-gray-100/50 shadow-xl hover:shadow-2xl transition-all duration-500 card-hover relative overflow-hidden"
                   style={{
                     animationDelay: `${index * 0.2}s`
                   }}
@@ -80,7 +80,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
           {/* Rentabilidade */}
-          <Card className="w-[400px] h-[280px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-6">
                 <TrendingUp className="h-16 w-16 text-brand-orange" />
@@ -92,7 +92,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Segurança */}
-          <Card className="w-[400px] h-[280px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-6">
                 <Handshake className="h-16 w-16 text-brand-orange" />
@@ -104,7 +104,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Rentabilidade 1% */}
-          <Card className="w-[400px] h-[280px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-6">
                 <Percent className="h-16 w-16 text-brand-orange" />
@@ -116,7 +116,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           </Card>
 
           {/* Condições de Pagamento */}
-          <Card className="w-[400px] h-[280px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
+          <Card className="w-[320px] h-[340px] bg-white rounded-xl shadow-md border-none hover:shadow-xl transition-all duration-300">
             <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full">
               <div className="mb-6">
                 <CreditCard className="h-16 w-16 text-brand-orange" />
