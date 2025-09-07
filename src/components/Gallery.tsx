@@ -1,7 +1,6 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const Gallery = () => {
   const galleryItems = [
@@ -89,27 +88,6 @@ const Gallery = () => {
               </div>
             </Card>
           ))}
-        </div>
-        
-        {/* CTA no final da Gallery */}
-        <div className="text-center mt-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 max-w-2xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-              Viu o <span className="text-brand-orange">Potencial</span>?
-            </h3>
-            <p className="text-white/90 mb-6 text-lg">
-              Este é o momento ideal para investir no futuro logístico de Santa Catarina
-            </p>
-            <Button 
-              onClick={() => {
-                const element = document.getElementById('contact');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-bold py-4 px-8 text-lg rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              🎯 GARANTIR MINHA COTA
-            </Button>
-          </div>
         </div>
       </div>
     </section>

@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-				'playfair': ['Playfair Display', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+				opensans: ['Open Sans', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -68,12 +69,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#1e40af',
-					gold: '#d97706',
-					navy: '#0f172a',
-					slate: '#475569',
-					'light-slate': '#f8fafc',
-					'executive': '#1e293b',
+					blue: '#0aaac6',
+					orange: '#ff8d08',
+					navy: '#20314e', // Updated to the requested color
+					'light-blue': 'rgba(10, 170, 198, 0.1)',
+					'dark-orange': '#e07b07',
 				}
 			},
 			borderRadius: {
