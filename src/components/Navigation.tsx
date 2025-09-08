@@ -23,7 +23,12 @@ const Navigation = ({
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="relative z-20">
+        <a 
+          href="https://galpomax.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="relative z-20"
+        >
           <img 
             src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
             alt="GALPOMAX Logo" 
