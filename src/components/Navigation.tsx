@@ -25,7 +25,7 @@ const Navigation = ({
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="relative z-20">
           <img 
-            src="/lovable-uploads/5cb0ddb3-da63-4cee-80f8-148159cb95bd.png" 
+            src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
             alt="GALPOMAX Logo" 
             className="h-10"
           />
