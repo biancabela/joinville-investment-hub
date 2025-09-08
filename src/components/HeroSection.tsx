@@ -37,10 +37,6 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
-        <span className="inline-block text-brand-blue font-montserrat font-medium text-xl md:text-2xl mb-6 animate-scale-in glass-effect px-6 py-2 rounded-full border border-brand-blue/30">
-          Projeto Multiuso Inovador
-        </span>
-
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-10 md:mb-12 tracking-tight leading-tight mx-auto animate-slide-up max-w-5xl relative">
           <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
             Oportunidade única para investidores

@@ -59,19 +59,6 @@ const Navigation = ({
             Galeria
             <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a 
-            href="#contact" 
-            className={`font-montserrat text-base hover:text-brand-orange transition-colors relative group ${
-              scrollPosition > 50 ? 'text-brand-navy' : 'text-white'
-            }`}
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('contact');
-            }}
-          >
-            Contato
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
-          </a>
           <Button 
             onClick={() => scrollToSection('contact')} 
             className="bg-brand-orange hover:bg-brand-dark-orange text-white rounded-lg px-6 py-3 font-montserrat shadow-card transition-all duration-300 hover:shadow-hover"
