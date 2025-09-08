@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
           <div>
             <img 
               src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
@@ -82,13 +82,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-montserrat font-bold mb-6">Sobre</h3>
-            <p className="text-gray-300 font-opensans font-light">
-              Especialistas em soluções industriais com foco em Build-to-Suit, oferecendo galpões e terrenos estrategicamente localizados para maximizar o potencial do seu negócio.
-            </p>
           </div>
         </div>
         
