@@ -10,8 +10,7 @@ const Footer = () => {
           <div>
             <div 
               onClick={() => {
-                console.log('Clique no logo da Galpomax detectado');
-                openExternalLink('https://galpomax.com');
+                openExternalLink('https://www.galpomax.com.br/');
               }}
               className="cursor-pointer inline-block hover:scale-105 transition-transform duration-300"
             >
