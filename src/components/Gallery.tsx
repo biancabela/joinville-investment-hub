@@ -101,10 +101,10 @@ const Gallery = () => {
           onClick={() => openExternalLink('https://wa.me/5547992935685')}
           variant="whatsapp"
           size="lg"
-          className="py-6 px-12 text-xl rounded-xl"
+          className="py-4 px-8 text-lg rounded-full"
         >
-          <span className="relative z-10">Fale com um consultor</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <span className="relative z-10">Tenho interesse</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
         </Button>
         </div>
       </div>

@@ -83,11 +83,11 @@ const ContactForm = () => {
                 type="button"
                 variant="whatsapp"
                 size="lg"
-                className="w-full md:w-auto py-4 px-10 text-xl rounded-lg"
+                className="w-full md:w-auto py-4 px-8 text-lg rounded-full"
               >
                 <Mail className="mr-2 h-5 w-5" />
-                <span className="relative z-10">Fale com um consultor</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <span className="relative z-10">Tenho interesse</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               </Button>
             </div>
           </form>

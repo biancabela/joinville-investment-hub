@@ -48,19 +48,18 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           </span>
         </h1>
         
-        <Button 
-          onClick={() => {
-            console.log('Botão principal do hero clicado');
-            openExternalLink('https://wa.me/5547992935685');
-          }}
-          variant="whatsapp"
-          size="lg"
-          className="py-10 px-16 text-2xl rounded-2xl animate-fade-in-delayed animate-glow"
-        >
-          <span className="relative z-10">Fale com um consultor</span>
-          <ArrowDown className="ml-3 h-6 w-6 animate-float" />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-        </Button>
+          <Button 
+            onClick={() => {
+              console.log('Botão principal do hero clicado');
+              openExternalLink('https://wa.me/5547992935685');
+            }}
+            variant="whatsapp"
+            size="lg"
+            className="py-4 px-8 text-lg rounded-full"
+          >
+            <span className="relative z-10">Tenho interesse</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          </Button>
       </div>
 
       {/* Saiba Mais CTA button - bottom right */}
@@ -72,10 +71,10 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           }}
           variant="whatsapp"
           size="lg"
-          className="py-5 px-10 text-xl rounded-xl animate-glow border-2 border-[hsl(var(--whatsapp-green))] hover:border-white"
+          className="py-3 px-6 text-base rounded-full"
         >
-          <span className="relative z-10">Fale com um consultor</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <span className="relative z-10">Tenho interesse</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
         </Button>
       </div>
 
