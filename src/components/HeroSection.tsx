@@ -58,7 +58,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           }}
           variant="whatsapp"
           size="lg"
-          className="py-3 px-6 text-base rounded-full"
+          className="py-4 px-8 text-lg rounded-full"
         >
           <span className="relative z-10">Tenho interesse</span>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
