@@ -58,6 +58,14 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
+            
+            {/* Botão de segurança abaixo das redes sociais */}
+            <div className="mt-6">
+              <div className="flex items-center justify-center text-white px-6 py-3 rounded-full font-semibold text-sm" style={{backgroundColor: '#0aaac6'}}>
+                <Shield className="h-4 w-4 mr-2" />
+                100% SEGURO - SEU DADO ESTÁ PROTEGIDO
+              </div>
+            </div>
           </div>
           
           <div>
