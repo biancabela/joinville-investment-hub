@@ -73,9 +73,16 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               <p className="text-2xl md:text-3xl font-semibold text-white">
                 com entrada e saldo parcelado!
               </p>
-            </div>
+          </div>
+          
+          {/* CTA Button */}
+          <div className="mt-12 text-center">
+            <button className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300">
+              Fale com um consultor
+            </button>
           </div>
         </div>
+      </div>
       </div>
     );
   }
@@ -131,6 +138,13 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
             <p className="text-2xl md:text-3xl font-semibold text-white">
               com entrada e saldo parcelado!
             </p>
+          </div>
+          
+          {/* CTA Button */}
+          <div className="mt-12 text-center">
+            <button className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300">
+              Fale com um consultor
+            </button>
           </div>
         </div>
       </div>

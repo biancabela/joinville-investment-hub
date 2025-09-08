@@ -81,7 +81,7 @@ const ContactForm = () => {
                 type="submit"
                 className="bg-brand-orange hover:bg-brand-dark-orange text-white font-montserrat font-medium py-3 px-8 text-lg rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
               >
-                <Mail className="mr-2 h-5 w-5" /> Solicitar informações
+                <Mail className="mr-2 h-5 w-5" /> Fale com um consultor
               </Button>
             </div>
           </form>

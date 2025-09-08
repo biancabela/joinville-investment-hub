@@ -47,6 +47,13 @@ const Benefits = () => {
             <p className="text-gray-600">Controle total sobre a qualidade dos materiais utilizados em toda a construção.</p>
           </div>
         </div>
+        
+        {/* CTA Button */}
+        <div className="mt-16 text-center">
+          <button className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300">
+            Fale com um consultor
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -40,6 +40,13 @@ const ComparisonChart = () => {
             <span className="font-medium">Projeto: 2,04% a.m.</span> (1,04% rentabilidade + 1% valorização estimada)
           </p>
         </div>
+        
+        {/* CTA Button */}
+        <div className="mt-16 text-center">
+          <button className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300">
+            Fale com um consultor
+          </button>
+        </div>
       </div>
     </section>
   );

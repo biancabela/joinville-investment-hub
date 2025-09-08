@@ -55,7 +55,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           onClick={() => scrollToSection('highlights')} 
           className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-8 px-12 text-xl rounded-2xl shadow-2xl shadow-brand-orange/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
         >
-          <span className="relative z-10">Saiba Mais</span>
+          <span className="relative z-10">Fale com um consultor</span>
           <ArrowDown className="ml-3 h-6 w-6 animate-float" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </Button>
@@ -67,7 +67,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           onClick={() => scrollToSection('highlights')} 
           className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-brand-orange hover:border-white"
         >
-          Saiba Mais
+          Fale com um consultor
         </Button>
       </div>
 
