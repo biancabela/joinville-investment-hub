@@ -9,7 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
           <div>
             <div 
-              onClick={() => openExternalLink('https://galpomax.com')}
+              onClick={() => {
+                console.log('Clique no logo da Galpomax detectado');
+                openExternalLink('https://galpomax.com');
+              }}
               className="cursor-pointer inline-block hover:scale-105 transition-transform duration-300"
             >
               <img 
