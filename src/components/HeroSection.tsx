@@ -53,7 +53,9 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             console.log('Botão principal do hero clicado');
             openExternalLink('https://wa.me/5547992935685');
           }}
-          className="bg-[hsl(var(--whatsapp-green))] hover:bg-[hsl(var(--whatsapp-green))]/90 text-white font-glacial font-bold py-10 px-16 text-2xl rounded-2xl shadow-2xl shadow-[hsl(var(--whatsapp-green))]/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
+          variant="whatsapp"
+          size="lg"
+          className="py-10 px-16 text-2xl rounded-2xl animate-fade-in-delayed animate-glow"
         >
           <span className="relative z-10">Fale com um consultor</span>
           <ArrowDown className="ml-3 h-6 w-6 animate-float" />
@@ -68,9 +70,12 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             console.log('Botão secundário do hero clicado');
             openExternalLink('https://wa.me/5547992935685');
           }}
-          className="bg-[hsl(var(--whatsapp-green))] hover:bg-[hsl(var(--whatsapp-green))]/90 text-white font-glacial font-bold py-5 px-10 text-xl rounded-xl shadow-xl shadow-[hsl(var(--whatsapp-green))]/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-[hsl(var(--whatsapp-green))] hover:border-white"
+          variant="whatsapp"
+          size="lg"
+          className="py-5 px-10 text-xl rounded-xl animate-glow border-2 border-[hsl(var(--whatsapp-green))] hover:border-white"
         >
-          Fale com um consultor
+          <span className="relative z-10">Fale com um consultor</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
         </Button>
       </div>
 

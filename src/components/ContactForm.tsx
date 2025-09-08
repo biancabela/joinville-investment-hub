@@ -81,9 +81,13 @@ const ContactForm = () => {
               <Button
                 onClick={() => openExternalLink('https://wa.me/5547992935685')}
                 type="button"
-                className="bg-[hsl(var(--whatsapp-green))] hover:bg-[hsl(var(--whatsapp-green))]/90 text-white font-glacial font-bold py-4 px-10 text-xl rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
+                variant="whatsapp"
+                size="lg"
+                className="w-full md:w-auto py-4 px-10 text-xl rounded-lg"
               >
-                <Mail className="mr-2 h-5 w-5" /> Fale com um consultor
+                <Mail className="mr-2 h-5 w-5" />
+                <span className="relative z-10">Fale com um consultor</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               </Button>
             </div>
           </form>

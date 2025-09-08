@@ -1,6 +1,7 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Cell } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { openExternalLink } from "@/lib/navigation";
 
 const ComparisonChart = () => {
@@ -47,12 +48,15 @@ const ComparisonChart = () => {
         
         {/* CTA Button */}
         <div className="mt-16 text-center">
-          <button 
-            onClick={() => openExternalLink('https://wa.me/5547992935685')}
-            className="bg-[hsl(var(--whatsapp-green))] hover:bg-[hsl(var(--whatsapp-green))]/90 text-white font-glacial font-bold py-6 px-12 text-xl rounded-xl shadow-xl shadow-[hsl(var(--whatsapp-green))]/40 transform hover:scale-105 transition-all duration-300"
-          >
-            Fale com um consultor
-          </button>
+        <Button 
+          onClick={() => openExternalLink('https://wa.me/5547992935685')}
+          variant="whatsapp"
+          size="lg"
+          className="py-6 px-12 text-xl rounded-xl"
+        >
+          <span className="relative z-10">Fale com um consultor</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+        </Button>
         </div>
       </div>
     </section>
