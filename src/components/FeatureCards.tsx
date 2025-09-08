@@ -54,7 +54,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
                       <Icon className="h-20 w-20 text-brand-orange group-hover:scale-110 transition-all duration-500" />
                     </div>
                     
-                    <p className="text-2xl text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-opensans">
+                    <p className="text-2xl text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 font-codec">
                       {card.description}
                     </p>
                   </CardContent>

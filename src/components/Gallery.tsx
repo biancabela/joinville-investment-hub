@@ -77,8 +77,8 @@ const Gallery = () => {
                   {/* Content overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-white transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
                     <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                      <h3 className="text-2xl font-bold font-montserrat mb-3 text-shadow">{item.title}</h3>
-                      <p className="text-sm font-opensans leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                      <h3 className="text-2xl font-bold font-codec mb-3 text-shadow">{item.title}</h3>
+                      <p className="text-sm font-codec leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                         {item.description}
                       </p>
                     </div>

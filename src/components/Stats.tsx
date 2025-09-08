@@ -22,7 +22,7 @@ const Stats = () => {
             <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
               16.000<span className="text-brand-orange">+</span>
             </p>
-            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Lotes entregues</p>
+            <p className="text-gray-700 font-semibold font-codec text-lg relative z-10">Lotes entregues</p>
             
             <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-orange/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
@@ -34,7 +34,7 @@ const Stats = () => {
             <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
               14<span className="text-brand-blue">+</span>
             </p>
-            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Municípios atendidos</p>
+            <p className="text-gray-700 font-semibold font-codec text-lg relative z-10">Municípios atendidos</p>
             
             <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-blue/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
@@ -46,7 +46,7 @@ const Stats = () => {
             <p className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
               27.000
             </p>
-            <p className="text-gray-700 font-semibold font-montserrat text-lg relative z-10">Projetos em andamento</p>
+            <p className="text-gray-700 font-semibold font-codec text-lg relative z-10">Projetos em andamento</p>
             
             <div className="absolute bottom-0 left-0 w-0 h-full bg-gradient-to-t from-brand-navy/5 to-transparent group-hover:w-full transition-all duration-500"></div>
           </div>
