@@ -20,6 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				codec: ['Questrial', 'sans-serif'], // Codec Pro alternative
 				montserrat: ['Montserrat', 'sans-serif'],
 				opensans: ['Open Sans', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
