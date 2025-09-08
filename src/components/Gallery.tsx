@@ -41,16 +41,51 @@ const Gallery = () => {
   return (
     <section className="section-spacing text-white px-4 lg:px-0" id="gallery" style={{backgroundColor: '#1a1f2c'}}>
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold mb-3 text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-codec font-bold mb-8 text-center">
           ESPECIFICAÇÕES DO PROJETO
         </h2>
         
-        <div className="text-base md:text-lg font-opensans font-light text-center text-gray-300 mb-16 max-w-3xl mx-auto">
-          <ul className="space-y-2 text-left">
-            <li>• Área total: 54.000 m²</li>
-            <li>• Área bruta locável: 32.000 m²</li>
-            <li>• Polo comercial com acesso a mais de 150 mil pessoas</li>
-          </ul>
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Área Total */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-codec font-bold text-white mb-4">
+                54.000
+              </div>
+              <div className="text-lg font-codec text-gray-300 mb-2">
+                m²
+              </div>
+              <div className="text-base font-codec text-gray-400">
+                Área total
+              </div>
+            </div>
+            
+            {/* Área Locável */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-codec font-bold text-white mb-4">
+                32.000
+              </div>
+              <div className="text-lg font-codec text-gray-300 mb-2">
+                m²
+              </div>
+              <div className="text-base font-codec text-gray-400">
+                Área bruta locável
+              </div>
+            </div>
+            
+            {/* Acesso */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-codec font-bold text-white mb-4">
+                150k+
+              </div>
+              <div className="text-lg font-codec text-gray-300 mb-2">
+                pessoas
+              </div>
+              <div className="text-base font-codec text-gray-400">
+                Acesso ao polo comercial
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
