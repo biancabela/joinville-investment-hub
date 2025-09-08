@@ -23,18 +23,16 @@ const Navigation = ({
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a 
-          href="https://galpomax.com" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="relative z-20"
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="relative z-20 cursor-pointer hover:scale-105 transition-transform duration-300"
         >
           <img 
             src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
             alt="GALPOMAX Logo" 
             className="h-20"
           />
-        </a>
+        </button>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
