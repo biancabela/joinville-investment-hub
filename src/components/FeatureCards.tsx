@@ -66,11 +66,11 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
           
           {/* Condições de Pagamento */}
           <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-brand-orange/20 to-brand-blue/20 rounded-2xl p-8 border border-brand-orange/30 shadow-xl">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-2">
+            <div className="bg-brand-navy rounded-2xl p-8 shadow-xl">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
                 Apenas 05 cotas de R$ 2.000.000,00
               </p>
-              <p className="text-2xl md:text-3xl font-semibold text-brand-orange">
+              <p className="text-2xl md:text-3xl font-semibold text-white">
                 com entrada e saldo parcelado!
               </p>
             </div>
@@ -124,11 +124,11 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
         
         {/* Condições de Pagamento */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-brand-orange/20 to-brand-blue/20 rounded-2xl p-8 border border-brand-orange/30 shadow-xl">
-            <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-2">
+          <div className="bg-brand-navy rounded-2xl p-8 shadow-xl">
+            <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
               Apenas 05 cotas de R$ 2.000.000,00
             </p>
-            <p className="text-2xl md:text-3xl font-semibold text-brand-orange">
+            <p className="text-2xl md:text-3xl font-semibold text-white">
               com entrada e saldo parcelado!
             </p>
           </div>
