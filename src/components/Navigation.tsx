@@ -27,7 +27,7 @@ const Navigation = ({
           <img 
             src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
             alt="GALPOMAX Logo" 
-            className="h-16"
+            className="h-20"
           />
         </a>
         

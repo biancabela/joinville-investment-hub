@@ -16,9 +16,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
           <div>
             <img 
-              src="/lovable-uploads/5cb0ddb3-da63-4cee-80f8-148159cb95bd.png" 
+              src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
               alt="GALPOMAX Logo" 
-              className="h-12 mb-6"
+              className="h-16 mb-6"
             />
             <p className="text-gray-300 mb-6 font-opensans font-light">
               Operações de BTS | Venda e aluguel de galpões e terrenos industriais
