@@ -1,5 +1,6 @@
 
 import { Mail, Phone, Facebook, Instagram, Linkedin, MapPin, Shield } from "lucide-react";
+import { openExternalLink } from "@/lib/navigation";
 
 const Footer = () => {
   return (
@@ -7,17 +8,16 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
           <div>
-            <a 
-              href="https://galpomax.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <div 
+              onClick={() => openExternalLink('https://galpomax.com')}
+              className="cursor-pointer inline-block hover:scale-105 transition-transform duration-300"
             >
               <img 
                 src="/lovable-uploads/5a1ce013-db38-471e-91e2-b2a33f9cf5c7.png" 
                 alt="GALPOMAX Logo" 
                 className="h-16 mb-6"
               />
-            </a>
+            </div>
             <p className="text-gray-300 mb-6 font-opensans font-light">
               Operações de BTS | Venda e aluguel de galpões e terrenos industriais
             </p>
