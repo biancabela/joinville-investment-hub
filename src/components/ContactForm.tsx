@@ -5,6 +5,7 @@ import { Mail } from "lucide-react";
 import { toast } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { openExternalLink } from "@/lib/navigation";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -78,7 +79,7 @@ const ContactForm = () => {
             
             <div className="text-center">
               <Button
-                onClick={() => window.open('https://wa.me/5547992935685', '_blank')}
+                onClick={() => openExternalLink('https://wa.me/5547992935685')}
                 type="button"
                 className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-glacial font-bold py-4 px-10 text-xl rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
               >

@@ -1,4 +1,8 @@
 
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Cell } from 'recharts';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { openExternalLink } from "@/lib/navigation";
+
 const ComparisonChart = () => {
   return (
     <section className="py-20 bg-white px-4 lg:px-0">
@@ -44,7 +48,7 @@ const ComparisonChart = () => {
         {/* CTA Button */}
         <div className="mt-16 text-center">
           <button 
-            onClick={() => window.open('https://wa.me/5547992935685', '_blank')}
+            onClick={() => openExternalLink('https://wa.me/5547992935685')}
             className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-glacial font-bold py-6 px-12 text-xl rounded-xl shadow-xl shadow-[#0aaac6]/40 transform hover:scale-105 transition-all duration-300"
           >
             Fale com um consultor
