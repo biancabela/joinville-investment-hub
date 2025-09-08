@@ -37,7 +37,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       </div>
       
       <div className="container mx-auto z-10 px-6 md:px-10 lg:px-20 max-w-7xl text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-10 md:mb-12 tracking-tight leading-tight mx-auto animate-slide-up max-w-5xl relative">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-glacial font-bold text-white mb-10 md:mb-12 tracking-tight leading-tight mx-auto animate-slide-up max-w-5xl relative">
           <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
             Oportunidade única para investidores
           </span>
@@ -48,8 +48,8 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </h1>
         
         <Button 
-          onClick={() => scrollToSection('highlights')} 
-          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-semibold py-10 px-16 text-2xl rounded-2xl shadow-2xl shadow-[#0aaac6]/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
+          onClick={() => window.open('https://wa.me/5547992935685', '_blank')} 
+          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-glacial font-bold py-10 px-16 text-2xl rounded-2xl shadow-2xl shadow-[#0aaac6]/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
         >
           <span className="relative z-10">Fale com um consultor</span>
           <ArrowDown className="ml-3 h-6 w-6 animate-float" />
@@ -60,8 +60,8 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       {/* Saiba Mais CTA button - bottom right */}
       <div className="absolute bottom-20 right-10">
         <Button 
-          onClick={() => scrollToSection('highlights')} 
-          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-semibold py-5 px-10 text-xl rounded-xl shadow-xl shadow-[#0aaac6]/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-[#0aaac6] hover:border-white"
+          onClick={() => window.open('https://wa.me/5547992935685', '_blank')} 
+          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-glacial font-bold py-5 px-10 text-xl rounded-xl shadow-xl shadow-[#0aaac6]/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-[#0aaac6] hover:border-white"
         >
           Fale com um consultor
         </Button>

@@ -23,6 +23,7 @@ export default {
 				montserrat: ['Montserrat', 'sans-serif'],
 				opensans: ['Open Sans', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
+				glacial: ['Inter', 'sans-serif'], // Using Inter as substitute for Glacial Indifferente
 			},
 			colors: {
 				border: 'hsl(var(--border))',

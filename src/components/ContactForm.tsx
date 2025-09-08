@@ -77,9 +77,10 @@ const ContactForm = () => {
             </div>
             
             <div className="text-center">
-              <Button 
-                type="submit"
-                className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-montserrat font-medium py-4 px-10 text-xl rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
+              <Button
+                onClick={() => window.open('https://wa.me/5547992935685', '_blank')}
+                type="button"
+                className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-glacial font-bold py-4 px-10 text-xl rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
               >
                 <Mail className="mr-2 h-5 w-5" /> Fale com um consultor
               </Button>
