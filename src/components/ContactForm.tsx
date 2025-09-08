@@ -79,7 +79,7 @@ const ContactForm = () => {
             <div className="text-center">
               <Button 
                 type="submit"
-                className="bg-brand-orange hover:bg-brand-dark-orange text-white font-montserrat font-medium py-3 px-8 text-lg rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
+                className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-montserrat font-medium py-4 px-10 text-xl rounded-lg shadow-card hover:shadow-hover transition-all w-full md:w-auto"
               >
                 <Mail className="mr-2 h-5 w-5" /> Fale com um consultor
               </Button>

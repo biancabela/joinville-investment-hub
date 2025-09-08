@@ -53,7 +53,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         
         <Button 
           onClick={() => scrollToSection('highlights')} 
-          className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-8 px-12 text-xl rounded-2xl shadow-2xl shadow-brand-orange/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
+          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-semibold py-10 px-16 text-2xl rounded-2xl shadow-2xl shadow-[#0aaac6]/30 transform hover:scale-105 transition-all duration-300 animate-fade-in-delayed animate-glow relative overflow-hidden group"
         >
           <span className="relative z-10">Fale com um consultor</span>
           <ArrowDown className="ml-3 h-6 w-6 animate-float" />
@@ -65,7 +65,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       <div className="absolute bottom-20 right-10">
         <Button 
           onClick={() => scrollToSection('highlights')} 
-          className="bg-gradient-to-r from-brand-orange to-brand-dark-orange hover:from-brand-dark-orange hover:to-brand-orange text-white font-semibold py-4 px-8 text-lg rounded-xl shadow-xl shadow-brand-orange/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-brand-orange hover:border-white"
+          className="bg-[#0aaac6] hover:bg-[#0aaac6]/90 text-white font-semibold py-5 px-10 text-xl rounded-xl shadow-xl shadow-[#0aaac6]/40 transform hover:scale-105 transition-all duration-300 animate-glow border-2 border-[#0aaac6] hover:border-white"
         >
           Fale com um consultor
         </Button>
