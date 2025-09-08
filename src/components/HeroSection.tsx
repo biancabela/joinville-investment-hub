@@ -47,19 +47,6 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             e empresários em Joinville
           </span>
         </h1>
-        
-          <Button 
-            onClick={() => {
-              console.log('Botão principal do hero clicado');
-              openExternalLink('https://wa.me/5547992935685');
-            }}
-            variant="whatsapp"
-            size="lg"
-            className="py-4 px-8 text-lg rounded-full"
-          >
-            <span className="relative z-10">Tenho interesse</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-          </Button>
       </div>
 
       {/* Saiba Mais CTA button - bottom right */}
