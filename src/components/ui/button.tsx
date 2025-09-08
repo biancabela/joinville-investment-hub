@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        whatsapp: "border-2 border-[hsl(var(--whatsapp-green))] bg-white/80 hover:bg-white/90 text-[hsl(var(--whatsapp-green))] hover:text-[hsl(var(--whatsapp-green))] font-medium shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group rounded-full backdrop-blur-sm",
+        whatsapp: "bg-gradient-to-r from-[hsl(191,85%,42%)] to-[hsl(33,100%,52%)] text-white hover:from-[hsl(191,85%,38%)] hover:to-[hsl(33,100%,48%)] font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group rounded-full h-12 px-8 text-base",
       },
       size: {
         default: "h-10 px-4 py-2",
