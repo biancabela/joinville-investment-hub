@@ -144,7 +144,7 @@ const FeatureCards = ({ compact = false }: FeatureCardsProps) => {
               className="py-4 px-8 text-lg rounded-full"
             >
               <span className="relative z-10">Tenho interesse</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </Button>
           </div>
         </div>

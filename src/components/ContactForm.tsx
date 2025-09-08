@@ -87,7 +87,7 @@ const ContactForm = () => {
               >
                 <Mail className="mr-2 h-5 w-5" />
                 <span className="relative z-10">Tenho interesse</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               </Button>
             </div>
           </form>
