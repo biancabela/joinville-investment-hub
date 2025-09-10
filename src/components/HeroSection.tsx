@@ -11,7 +11,7 @@ type HeroSectionProps = {
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const backgroundImageUrl = "/lovable-uploads/543fb73e-f7c6-4b7d-b2f3-eb46f2307152.png";
+  const backgroundImageUrl = "/lovable-uploads/5ddcc3f8-daed-41b7-8e8d-b1a8620405c8.png";
   
   // Pre-load the image to check if it loads correctly
   useEffect(() => {
