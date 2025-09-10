@@ -63,8 +63,8 @@ const Index = () => {
           className="block hover:scale-105 transition-transform duration-300"
         >
           <img 
-            src="/lovable-uploads/43cd3e4d-f1ed-445c-bbf1-acf932a12786.png"
-            alt="veja mais opções de investimento"
+            src="/lovable-uploads/006f0eec-8bce-4637-9c47-9526dc796843.png"
+            alt="Veja outras opções de galpões venda"
             className="max-w-md h-auto rounded-lg shadow-lg"
           />
         </a>
