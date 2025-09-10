@@ -53,6 +53,23 @@ const Index = () => {
           <Gallery />
         </div>
       </main>
+      
+      {/* Botão para outras opções de galpões */}
+      <div className="py-8 bg-white flex justify-center">
+        <a 
+          href="https://www.galpomax.com.br/terrenos-galpoes/busca/lotes-condominios-venda"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block hover:scale-105 transition-transform duration-300"
+        >
+          <img 
+            src="/lovable-uploads/43cd3e4d-f1ed-445c-bbf1-acf932a12786.png"
+            alt="Veja outras opções de galpões venda"
+            className="max-w-full h-auto rounded-lg shadow-lg"
+          />
+        </a>
+      </div>
+      
       <WhatsAppButton />
       <Footer />
     </div>
