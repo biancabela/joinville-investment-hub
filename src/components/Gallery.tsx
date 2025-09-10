@@ -7,7 +7,7 @@ import { openExternalLink } from "@/lib/navigation";
 const Gallery = () => {
   const galleryItems = [
     {
-      image: "/lovable-uploads/52ce38d1-39f4-4df7-95d5-3b29323472dc.png",
+      image: "/lovable-uploads/ded6b657-c8af-449c-915a-15a41a187469.png",
       title: "Localização estratégica",
       description: "Posicionado em área de alta valorização e fácil acesso"
     },
