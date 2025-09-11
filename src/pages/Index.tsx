@@ -64,7 +64,7 @@ const Index = () => {
         >
           <img 
             src="/lovable-uploads/006f0eec-8bce-4637-9c47-9526dc796843.png"
-            alt="Veja outras opções de galpões venda"
+            alt="Mais opções de investimento"
             className="max-w-md h-auto rounded-lg shadow-lg"
           />
         </a>
